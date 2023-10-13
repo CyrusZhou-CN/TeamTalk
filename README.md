@@ -1,6 +1,7 @@
 # TeamTalk
-TeamTalk is a solution for enterprise IM
-具体文档见doc目录下,安装之前请仔细阅读相关文档。
+* [TeamTalk源码解析](TeamTalk源码解析/index.md)
+* TeamTalk is a solution for enterprise IM
+具体文档见doc目录下,安装之前请仔细阅读[相关文档](doc/README.md)。
 # 安装调试参考 
 https://blog.csdn.net/lsqtzj/article/details/119456161</br>
 # 客户端
