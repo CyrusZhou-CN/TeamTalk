@@ -19,7 +19,7 @@ mkdir %~dp0\..\..\include\ProtocolBuffer
 copy  %~dp0\..\..\..\pb\*.proto %~dp0\*.proto
 echo Copy IM protocol buffer files finished
 rem ����PBЭ���C++�汾
-protoc.exe --cpp_out=%~dp0\..\..\include\ProtocolBuffer *.proto
+D:\CPP\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe --cpp_out=%~dp0\..\..\include\ProtocolBuffer *.proto
 del *.proto
 echo make the pb files of c++ version has finished.
 pause

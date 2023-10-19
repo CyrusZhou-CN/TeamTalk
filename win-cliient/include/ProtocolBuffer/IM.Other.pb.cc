@@ -13,19 +13,24 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace IM {
 namespace Other {
-constexpr IMHeartBeat::IMHeartBeat(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized){}
+PROTOBUF_CONSTEXPR IMHeartBeat::IMHeartBeat(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMHeartBeatDefaultTypeInternal {
-  constexpr IMHeartBeatDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMHeartBeatDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMHeartBeatDefaultTypeInternal() {}
   union {
     IMHeartBeat _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMHeartBeatDefaultTypeInternal _IMHeartBeat_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMHeartBeatDefaultTypeInternal _IMHeartBeat_default_instance_;
 }  // namespace Other
 }  // namespace IM
 namespace IM {
@@ -40,56 +45,59 @@ class IMHeartBeat::_Internal {
 IMHeartBeat::IMHeartBeat(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.Other.IMHeartBeat)
 }
 IMHeartBeat::IMHeartBeat(const IMHeartBeat& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMHeartBeat* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:IM.Other.IMHeartBeat)
 }
 
-void IMHeartBeat::SharedCtor() {
+inline void IMHeartBeat::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 IMHeartBeat::~IMHeartBeat() {
   // @@protoc_insertion_point(destructor:IM.Other.IMHeartBeat)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMHeartBeat::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void IMHeartBeat::ArenaDtor(void* object) {
-  IMHeartBeat* _this = reinterpret_cast< IMHeartBeat* >(object);
-  (void)_this;
-}
-void IMHeartBeat::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMHeartBeat::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMHeartBeat::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.Other.IMHeartBeat)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMHeartBeat::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMHeartBeat::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     if ((tag == 0) || ((tag & 7) == 4)) {
       CHK_(ptr);
       ctx->SetLastTag(tag);
@@ -109,10 +117,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMHeartBeat::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMHeartBeat::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.Other.IMHeartBeat)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -127,31 +135,32 @@ size_t IMHeartBeat::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.Other.IMHeartBeat)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMHeartBeat::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMHeartBeat*>(
+  MergeFrom(*::_pbi::DownCast<const IMHeartBeat*>(
       &from));
 }
 
 void IMHeartBeat::MergeFrom(const IMHeartBeat& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.Other.IMHeartBeat)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMHeartBeat* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.Other.IMHeartBeat)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMHeartBeat::CopyFrom(const IMHeartBeat& from) {
@@ -179,7 +188,8 @@ std::string IMHeartBeat::GetTypeName() const {
 }  // namespace Other
 }  // namespace IM
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::IM::Other::IMHeartBeat* Arena::CreateMaybeMessage< ::IM::Other::IMHeartBeat >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::Other::IMHeartBeat*
+Arena::CreateMaybeMessage< ::IM::Other::IMHeartBeat >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::Other::IMHeartBeat >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

@@ -1,14 +1,14 @@
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\prsht.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\MsHTML.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\dimm.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\dispex.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\dxgitype.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\dxgicommon.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\dxgiformat.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\MsHtmHst.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\docobj.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\ExDisp.idl";
-import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\ObjSafe.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\prsht.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\MsHTML.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dimm.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dispex.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\dxgitype.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\dxgicommon.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\dxgiformat.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\MsHtmHst.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\docobj.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\ExDisp.idl";
+import "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\ObjSafe.idl";
 
 [
 	object,

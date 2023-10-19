@@ -1,8 +1,16 @@
-FROM lsqtzj/openeuler_mariadb:11.3.0 AS mariadb_runtime
+FROM lsqtzj/openeuler_mariadb:11.3.0 AS builder
+RUN  yum install coreutils make gcc g++ git -y
+RUN git clone https://github.com/aristocratos/btop.git && \
+    cd btop && gmake && gmake install
 
 FROM lsqtzj/openeuler_develop_base AS runtime
 
-COPY --from=mariadb_runtime /usr/local/mysql /usr/local/mysql
+COPY --from=builder /usr/local/mysql /usr/local/mysql
+COPY --from=builder /usr/local/bin/btop /usr/local/bin/btop
+COPY --from=builder /usr/local/share/btop /usr/local/share/btop
+COPY --from=builder /usr/local/share/applications/btop.desktop /usr/local/share/applications/btop.desktop
+COPY --from=builder /usr/local/share/icons/hicolor/48x48/apps/btop.png /usr/local/share/icons/hicolor/48x48/apps/btop.png
+COPY --from=builder /usr/local/share/icons/hicolor/scalable/apps/btop.svg /usr/local/share/icons/hicolor/scalable/apps/btop.svg
 VOLUME ["/develop"]
 
 WORKDIR /develop
@@ -37,5 +45,9 @@ RUN cd im-server-1.0.0 && ./sync_lib_for_zip.sh
 # RUN openssl req -new -key apns-dev-key.pem -out apns-dev-csr.pem -passin pass:tt@mogujie -subj "/C=US/ST=YourState/L=YourCity/O=YourOrganization/OU=YourOrganizationalUnit/CN=YourCommonName"
 # RUN openssl x509 -req -in apns-dev-csr.pem -signkey apns-dev-key.pem -out apns-dev-cert.pem -passin pass:tt@mogujie
 VOLUME [ "/develop" ]
+
+ENV LC_ALL=en_US.UTF-8
+ENV LANG=en_US.UTF-8
+
 ENTRYPOINT [ "/opt/main.sh"]
 CMD ["/bin/bash"]

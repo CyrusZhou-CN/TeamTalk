@@ -65,6 +65,6 @@ case $1 in
         ;;
     *)
         echo "Usage: "
-        echo "  ./restart.sh (login_server|msg_server|route_server|http_msg_server|file_server|push_server|msfs) [log]"
+        echo "  ./restart.sh (login_server|msg_server|route_server|http_msg_server|db_proxy_server|file_server|push_server|msfs) [log]"
         ;;
 esac

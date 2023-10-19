@@ -40,7 +40,10 @@ template<> struct hash<std::string> {
 }
 #else
 #include <unordered_map>
+#if defined(_MSC_VER) && (_MSC_VER < 1937) // 根据VC++版本修改
 using namespace stdext;
+#endif
+
 #endif
 #ifdef ANDROID
 #include <android/log.h>

@@ -13,61 +13,73 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace IM {
 namespace Internal {
-constexpr IMSyncAuthInfoReq::IMSyncAuthInfoReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : attach_data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , latest_time_(0u){}
+PROTOBUF_CONSTEXPR IMSyncAuthInfoReq::IMSyncAuthInfoReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.attach_data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.latest_time_)*/0u} {}
 struct IMSyncAuthInfoReqDefaultTypeInternal {
-  constexpr IMSyncAuthInfoReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMSyncAuthInfoReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMSyncAuthInfoReqDefaultTypeInternal() {}
   union {
     IMSyncAuthInfoReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMSyncAuthInfoReqDefaultTypeInternal _IMSyncAuthInfoReq_default_instance_;
-constexpr IMSyncAuthInfoRsp::IMSyncAuthInfoRsp(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : attach_data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , auth_list_(nullptr)
-  , latest_time_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMSyncAuthInfoReqDefaultTypeInternal _IMSyncAuthInfoReq_default_instance_;
+PROTOBUF_CONSTEXPR IMSyncAuthInfoRsp::IMSyncAuthInfoRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.attach_data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.auth_list_)*/nullptr
+  , /*decltype(_impl_.latest_time_)*/0u} {}
 struct IMSyncAuthInfoRspDefaultTypeInternal {
-  constexpr IMSyncAuthInfoRspDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMSyncAuthInfoRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMSyncAuthInfoRspDefaultTypeInternal() {}
   union {
     IMSyncAuthInfoRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMSyncAuthInfoRspDefaultTypeInternal _IMSyncAuthInfoRsp_default_instance_;
-constexpr IMGetUserIdListByNickNameReq::IMGetUserIdListByNickNameReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : nick_name_list_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , attach_data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMSyncAuthInfoRspDefaultTypeInternal _IMSyncAuthInfoRsp_default_instance_;
+PROTOBUF_CONSTEXPR IMGetUserIdListByNickNameReq::IMGetUserIdListByNickNameReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.nick_name_list_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.attach_data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}} {}
 struct IMGetUserIdListByNickNameReqDefaultTypeInternal {
-  constexpr IMGetUserIdListByNickNameReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMGetUserIdListByNickNameReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMGetUserIdListByNickNameReqDefaultTypeInternal() {}
   union {
     IMGetUserIdListByNickNameReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMGetUserIdListByNickNameReqDefaultTypeInternal _IMGetUserIdListByNickNameReq_default_instance_;
-constexpr IMGetUserIdListByNickNameRsp::IMGetUserIdListByNickNameRsp(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : attach_data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , user_info_list_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMGetUserIdListByNickNameReqDefaultTypeInternal _IMGetUserIdListByNickNameReq_default_instance_;
+PROTOBUF_CONSTEXPR IMGetUserIdListByNickNameRsp::IMGetUserIdListByNickNameRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.attach_data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.user_info_list_)*/nullptr} {}
 struct IMGetUserIdListByNickNameRspDefaultTypeInternal {
-  constexpr IMGetUserIdListByNickNameRspDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMGetUserIdListByNickNameRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMGetUserIdListByNickNameRspDefaultTypeInternal() {}
   union {
     IMGetUserIdListByNickNameRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMGetUserIdListByNickNameRspDefaultTypeInternal _IMGetUserIdListByNickNameRsp_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMGetUserIdListByNickNameRspDefaultTypeInternal _IMGetUserIdListByNickNameRsp_default_instance_;
 }  // namespace Internal
 }  // namespace IM
 namespace IM {
@@ -77,7 +89,7 @@ namespace Internal {
 
 class IMSyncAuthInfoReq::_Internal {
  public:
-  using HasBits = decltype(std::declval<IMSyncAuthInfoReq>()._has_bits_);
+  using HasBits = decltype(std::declval<IMSyncAuthInfoReq>()._impl_._has_bits_);
   static void set_has_attach_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -86,87 +98,100 @@ class IMSyncAuthInfoReq::_Internal {
 IMSyncAuthInfoReq::IMSyncAuthInfoReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.Internal.IMSyncAuthInfoReq)
 }
 IMSyncAuthInfoReq::IMSyncAuthInfoReq(const IMSyncAuthInfoReq& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMSyncAuthInfoReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.latest_time_){}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_attach_data()) {
-    attach_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_attach_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.attach_data_.Set(from._internal_attach_data(), 
+      _this->GetArenaForAllocation());
   }
-  latest_time_ = from.latest_time_;
+  _this->_impl_.latest_time_ = from._impl_.latest_time_;
   // @@protoc_insertion_point(copy_constructor:IM.Internal.IMSyncAuthInfoReq)
 }
 
-void IMSyncAuthInfoReq::SharedCtor() {
-attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-latest_time_ = 0u;
+inline void IMSyncAuthInfoReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.latest_time_){0u}
+  };
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMSyncAuthInfoReq::~IMSyncAuthInfoReq() {
   // @@protoc_insertion_point(destructor:IM.Internal.IMSyncAuthInfoReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMSyncAuthInfoReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  attach_data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.Destroy();
 }
 
-void IMSyncAuthInfoReq::ArenaDtor(void* object) {
-  IMSyncAuthInfoReq* _this = reinterpret_cast< IMSyncAuthInfoReq* >(object);
-  (void)_this;
-}
-void IMSyncAuthInfoReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMSyncAuthInfoReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMSyncAuthInfoReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.Internal.IMSyncAuthInfoReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    attach_data_.ClearNonDefaultToEmpty();
+    _impl_.attach_data_.ClearNonDefaultToEmpty();
   }
-  latest_time_ = 0u;
-  _has_bits_.Clear();
+  _impl_.latest_time_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMSyncAuthInfoReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMSyncAuthInfoReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 latest_time = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          latest_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.latest_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // optional bytes attach_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_attach_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -187,7 +212,7 @@ const char* IMSyncAuthInfoReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     CHK_(ptr != nullptr);
   }  // while
 message_done:
-  _has_bits_.Or(has_bits);
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -195,16 +220,16 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMSyncAuthInfoReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMSyncAuthInfoReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.Internal.IMSyncAuthInfoReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 latest_time = 1;
   if (this->_internal_latest_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_latest_time(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_latest_time(), target);
   }
 
   // optional bytes attach_data = 20;
@@ -225,12 +250,12 @@ size_t IMSyncAuthInfoReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.Internal.IMSyncAuthInfoReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional bytes attach_data = 20;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -239,36 +264,37 @@ size_t IMSyncAuthInfoReq::ByteSizeLong() const {
 
   // uint32 latest_time = 1;
   if (this->_internal_latest_time() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_latest_time());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_latest_time());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMSyncAuthInfoReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMSyncAuthInfoReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMSyncAuthInfoReq*>(
       &from));
 }
 
 void IMSyncAuthInfoReq::MergeFrom(const IMSyncAuthInfoReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMSyncAuthInfoReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMSyncAuthInfoReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMSyncAuthInfoReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_attach_data()) {
-    _internal_set_attach_data(from._internal_attach_data());
+    _this->_internal_set_attach_data(from._internal_attach_data());
   }
   if (from._internal_latest_time() != 0) {
-    _internal_set_latest_time(from._internal_latest_time());
+    _this->_internal_set_latest_time(from._internal_latest_time());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMSyncAuthInfoReq::CopyFrom(const IMSyncAuthInfoReq& from) {
@@ -287,13 +313,12 @@ void IMSyncAuthInfoReq::InternalSwap(IMSyncAuthInfoReq* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &attach_data_, lhs_arena,
-      &other->attach_data_, rhs_arena
+      &_impl_.attach_data_, lhs_arena,
+      &other->_impl_.attach_data_, rhs_arena
   );
-  swap(latest_time_, other->latest_time_);
+  swap(_impl_.latest_time_, other->_impl_.latest_time_);
 }
 
 std::string IMSyncAuthInfoReq::GetTypeName() const {
@@ -305,7 +330,7 @@ std::string IMSyncAuthInfoReq::GetTypeName() const {
 
 class IMSyncAuthInfoRsp::_Internal {
  public:
-  using HasBits = decltype(std::declval<IMSyncAuthInfoRsp>()._has_bits_);
+  using HasBits = decltype(std::declval<IMSyncAuthInfoRsp>()._impl_._has_bits_);
   static const ::IM::BaseDefine::AuthInfo& auth_list(const IMSyncAuthInfoRsp* msg);
   static void set_has_attach_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -314,109 +339,119 @@ class IMSyncAuthInfoRsp::_Internal {
 
 const ::IM::BaseDefine::AuthInfo&
 IMSyncAuthInfoRsp::_Internal::auth_list(const IMSyncAuthInfoRsp* msg) {
-  return *msg->auth_list_;
+  return *msg->_impl_.auth_list_;
 }
 void IMSyncAuthInfoRsp::clear_auth_list() {
-  if (GetArenaForAllocation() == nullptr && auth_list_ != nullptr) {
-    delete auth_list_;
+  if (GetArenaForAllocation() == nullptr && _impl_.auth_list_ != nullptr) {
+    delete _impl_.auth_list_;
   }
-  auth_list_ = nullptr;
+  _impl_.auth_list_ = nullptr;
 }
 IMSyncAuthInfoRsp::IMSyncAuthInfoRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.Internal.IMSyncAuthInfoRsp)
 }
 IMSyncAuthInfoRsp::IMSyncAuthInfoRsp(const IMSyncAuthInfoRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMSyncAuthInfoRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.auth_list_){nullptr}
+    , decltype(_impl_.latest_time_){}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_attach_data()) {
-    attach_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_attach_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.attach_data_.Set(from._internal_attach_data(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_auth_list()) {
-    auth_list_ = new ::IM::BaseDefine::AuthInfo(*from.auth_list_);
-  } else {
-    auth_list_ = nullptr;
+    _this->_impl_.auth_list_ = new ::IM::BaseDefine::AuthInfo(*from._impl_.auth_list_);
   }
-  latest_time_ = from.latest_time_;
+  _this->_impl_.latest_time_ = from._impl_.latest_time_;
   // @@protoc_insertion_point(copy_constructor:IM.Internal.IMSyncAuthInfoRsp)
 }
 
-void IMSyncAuthInfoRsp::SharedCtor() {
-attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&auth_list_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&latest_time_) -
-    reinterpret_cast<char*>(&auth_list_)) + sizeof(latest_time_));
+inline void IMSyncAuthInfoRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.auth_list_){nullptr}
+    , decltype(_impl_.latest_time_){0u}
+  };
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMSyncAuthInfoRsp::~IMSyncAuthInfoRsp() {
   // @@protoc_insertion_point(destructor:IM.Internal.IMSyncAuthInfoRsp)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMSyncAuthInfoRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  attach_data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete auth_list_;
+  _impl_.attach_data_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.auth_list_;
 }
 
-void IMSyncAuthInfoRsp::ArenaDtor(void* object) {
-  IMSyncAuthInfoRsp* _this = reinterpret_cast< IMSyncAuthInfoRsp* >(object);
-  (void)_this;
-}
-void IMSyncAuthInfoRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMSyncAuthInfoRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMSyncAuthInfoRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.Internal.IMSyncAuthInfoRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    attach_data_.ClearNonDefaultToEmpty();
+    _impl_.attach_data_.ClearNonDefaultToEmpty();
   }
-  if (GetArenaForAllocation() == nullptr && auth_list_ != nullptr) {
-    delete auth_list_;
+  if (GetArenaForAllocation() == nullptr && _impl_.auth_list_ != nullptr) {
+    delete _impl_.auth_list_;
   }
-  auth_list_ = nullptr;
-  latest_time_ = 0u;
-  _has_bits_.Clear();
+  _impl_.auth_list_ = nullptr;
+  _impl_.latest_time_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMSyncAuthInfoRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMSyncAuthInfoRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 latest_time = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          latest_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.latest_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // .IM.BaseDefine.AuthInfo auth_list = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_auth_list(), ptr);
           CHK_(ptr);
         } else
@@ -424,9 +459,9 @@ const char* IMSyncAuthInfoRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
         continue;
       // optional bytes attach_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_attach_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -447,7 +482,7 @@ const char* IMSyncAuthInfoRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     CHK_(ptr != nullptr);
   }  // while
 message_done:
-  _has_bits_.Or(has_bits);
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -455,24 +490,23 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMSyncAuthInfoRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMSyncAuthInfoRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.Internal.IMSyncAuthInfoRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 latest_time = 1;
   if (this->_internal_latest_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_latest_time(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_latest_time(), target);
   }
 
   // .IM.BaseDefine.AuthInfo auth_list = 2;
   if (this->_internal_has_auth_list()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::auth_list(this), target, stream);
+      InternalWriteMessage(2, _Internal::auth_list(this),
+        _Internal::auth_list(this).GetCachedSize(), target, stream);
   }
 
   // optional bytes attach_data = 20;
@@ -493,12 +527,12 @@ size_t IMSyncAuthInfoRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.Internal.IMSyncAuthInfoRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional bytes attach_data = 20;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -509,44 +543,46 @@ size_t IMSyncAuthInfoRsp::ByteSizeLong() const {
   if (this->_internal_has_auth_list()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *auth_list_);
+        *_impl_.auth_list_);
   }
 
   // uint32 latest_time = 1;
   if (this->_internal_latest_time() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_latest_time());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_latest_time());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMSyncAuthInfoRsp::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMSyncAuthInfoRsp*>(
+  MergeFrom(*::_pbi::DownCast<const IMSyncAuthInfoRsp*>(
       &from));
 }
 
 void IMSyncAuthInfoRsp::MergeFrom(const IMSyncAuthInfoRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMSyncAuthInfoRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMSyncAuthInfoRsp* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMSyncAuthInfoRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_attach_data()) {
-    _internal_set_attach_data(from._internal_attach_data());
+    _this->_internal_set_attach_data(from._internal_attach_data());
   }
   if (from._internal_has_auth_list()) {
-    _internal_mutable_auth_list()->::IM::BaseDefine::AuthInfo::MergeFrom(from._internal_auth_list());
+    _this->_internal_mutable_auth_list()->::IM::BaseDefine::AuthInfo::MergeFrom(
+        from._internal_auth_list());
   }
   if (from._internal_latest_time() != 0) {
-    _internal_set_latest_time(from._internal_latest_time());
+    _this->_internal_set_latest_time(from._internal_latest_time());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMSyncAuthInfoRsp::CopyFrom(const IMSyncAuthInfoRsp& from) {
@@ -565,18 +601,17 @@ void IMSyncAuthInfoRsp::InternalSwap(IMSyncAuthInfoRsp* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &attach_data_, lhs_arena,
-      &other->attach_data_, rhs_arena
+      &_impl_.attach_data_, lhs_arena,
+      &other->_impl_.attach_data_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMSyncAuthInfoRsp, latest_time_)
-      + sizeof(IMSyncAuthInfoRsp::latest_time_)
-      - PROTOBUF_FIELD_OFFSET(IMSyncAuthInfoRsp, auth_list_)>(
-          reinterpret_cast<char*>(&auth_list_),
-          reinterpret_cast<char*>(&other->auth_list_));
+      PROTOBUF_FIELD_OFFSET(IMSyncAuthInfoRsp, _impl_.latest_time_)
+      + sizeof(IMSyncAuthInfoRsp::_impl_.latest_time_)
+      - PROTOBUF_FIELD_OFFSET(IMSyncAuthInfoRsp, _impl_.auth_list_)>(
+          reinterpret_cast<char*>(&_impl_.auth_list_),
+          reinterpret_cast<char*>(&other->_impl_.auth_list_));
 }
 
 std::string IMSyncAuthInfoRsp::GetTypeName() const {
@@ -588,7 +623,7 @@ std::string IMSyncAuthInfoRsp::GetTypeName() const {
 
 class IMGetUserIdListByNickNameReq::_Internal {
  public:
-  using HasBits = decltype(std::declval<IMGetUserIdListByNickNameReq>()._has_bits_);
+  using HasBits = decltype(std::declval<IMGetUserIdListByNickNameReq>()._impl_._has_bits_);
   static void set_has_attach_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -597,94 +632,114 @@ class IMGetUserIdListByNickNameReq::_Internal {
 IMGetUserIdListByNickNameReq::IMGetUserIdListByNickNameReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.Internal.IMGetUserIdListByNickNameReq)
 }
 IMGetUserIdListByNickNameReq::IMGetUserIdListByNickNameReq(const IMGetUserIdListByNickNameReq& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMGetUserIdListByNickNameReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.nick_name_list_){}
+    , decltype(_impl_.attach_data_){}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  nick_name_list_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.nick_name_list_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.nick_name_list_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_nick_name_list().empty()) {
-    nick_name_list_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nick_name_list(), 
-      GetArenaForAllocation());
+    _this->_impl_.nick_name_list_.Set(from._internal_nick_name_list(), 
+      _this->GetArenaForAllocation());
   }
-  attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_attach_data()) {
-    attach_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_attach_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.attach_data_.Set(from._internal_attach_data(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:IM.Internal.IMGetUserIdListByNickNameReq)
 }
 
-void IMGetUserIdListByNickNameReq::SharedCtor() {
-nick_name_list_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void IMGetUserIdListByNickNameReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.nick_name_list_){}
+    , decltype(_impl_.attach_data_){}
+  };
+  _impl_.nick_name_list_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.nick_name_list_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMGetUserIdListByNickNameReq::~IMGetUserIdListByNickNameReq() {
   // @@protoc_insertion_point(destructor:IM.Internal.IMGetUserIdListByNickNameReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMGetUserIdListByNickNameReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  nick_name_list_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  attach_data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.nick_name_list_.Destroy();
+  _impl_.attach_data_.Destroy();
 }
 
-void IMGetUserIdListByNickNameReq::ArenaDtor(void* object) {
-  IMGetUserIdListByNickNameReq* _this = reinterpret_cast< IMGetUserIdListByNickNameReq* >(object);
-  (void)_this;
-}
-void IMGetUserIdListByNickNameReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMGetUserIdListByNickNameReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMGetUserIdListByNickNameReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.Internal.IMGetUserIdListByNickNameReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  nick_name_list_.ClearToEmpty();
-  cached_has_bits = _has_bits_[0];
+  _impl_.nick_name_list_.ClearToEmpty();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    attach_data_.ClearNonDefaultToEmpty();
+    _impl_.attach_data_.ClearNonDefaultToEmpty();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMGetUserIdListByNickNameReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMGetUserIdListByNickNameReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string nick_name_list = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_nick_name_list();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // optional bytes attach_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_attach_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -705,7 +760,7 @@ const char* IMGetUserIdListByNickNameReq::_InternalParse(const char* ptr, ::PROT
     CHK_(ptr != nullptr);
   }  // while
 message_done:
-  _has_bits_.Or(has_bits);
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -713,10 +768,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMGetUserIdListByNickNameReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMGetUserIdListByNickNameReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.Internal.IMGetUserIdListByNickNameReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string nick_name_list = 1;
@@ -747,7 +802,7 @@ size_t IMGetUserIdListByNickNameReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.Internal.IMGetUserIdListByNickNameReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -759,7 +814,7 @@ size_t IMGetUserIdListByNickNameReq::ByteSizeLong() const {
   }
 
   // optional bytes attach_data = 20;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -769,30 +824,31 @@ size_t IMGetUserIdListByNickNameReq::ByteSizeLong() const {
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMGetUserIdListByNickNameReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMGetUserIdListByNickNameReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMGetUserIdListByNickNameReq*>(
       &from));
 }
 
 void IMGetUserIdListByNickNameReq::MergeFrom(const IMGetUserIdListByNickNameReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMGetUserIdListByNickNameReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMGetUserIdListByNickNameReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMGetUserIdListByNickNameReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_nick_name_list().empty()) {
-    _internal_set_nick_name_list(from._internal_nick_name_list());
+    _this->_internal_set_nick_name_list(from._internal_nick_name_list());
   }
   if (from._internal_has_attach_data()) {
-    _internal_set_attach_data(from._internal_attach_data());
+    _this->_internal_set_attach_data(from._internal_attach_data());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMGetUserIdListByNickNameReq::CopyFrom(const IMGetUserIdListByNickNameReq& from) {
@@ -811,16 +867,14 @@ void IMGetUserIdListByNickNameReq::InternalSwap(IMGetUserIdListByNickNameReq* ot
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &nick_name_list_, lhs_arena,
-      &other->nick_name_list_, rhs_arena
+      &_impl_.nick_name_list_, lhs_arena,
+      &other->_impl_.nick_name_list_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &attach_data_, lhs_arena,
-      &other->attach_data_, rhs_arena
+      &_impl_.attach_data_, lhs_arena,
+      &other->_impl_.attach_data_, rhs_arena
   );
 }
 
@@ -833,7 +887,7 @@ std::string IMGetUserIdListByNickNameReq::GetTypeName() const {
 
 class IMGetUserIdListByNickNameRsp::_Internal {
  public:
-  using HasBits = decltype(std::declval<IMGetUserIdListByNickNameRsp>()._has_bits_);
+  using HasBits = decltype(std::declval<IMGetUserIdListByNickNameRsp>()._impl_._has_bits_);
   static const ::IM::BaseDefine::UserInfo& user_info_list(const IMGetUserIdListByNickNameRsp* msg);
   static void set_has_attach_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -842,96 +896,107 @@ class IMGetUserIdListByNickNameRsp::_Internal {
 
 const ::IM::BaseDefine::UserInfo&
 IMGetUserIdListByNickNameRsp::_Internal::user_info_list(const IMGetUserIdListByNickNameRsp* msg) {
-  return *msg->user_info_list_;
+  return *msg->_impl_.user_info_list_;
 }
 void IMGetUserIdListByNickNameRsp::clear_user_info_list() {
-  if (GetArenaForAllocation() == nullptr && user_info_list_ != nullptr) {
-    delete user_info_list_;
+  if (GetArenaForAllocation() == nullptr && _impl_.user_info_list_ != nullptr) {
+    delete _impl_.user_info_list_;
   }
-  user_info_list_ = nullptr;
+  _impl_.user_info_list_ = nullptr;
 }
 IMGetUserIdListByNickNameRsp::IMGetUserIdListByNickNameRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.Internal.IMGetUserIdListByNickNameRsp)
 }
 IMGetUserIdListByNickNameRsp::IMGetUserIdListByNickNameRsp(const IMGetUserIdListByNickNameRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMGetUserIdListByNickNameRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.user_info_list_){nullptr}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_attach_data()) {
-    attach_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_attach_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.attach_data_.Set(from._internal_attach_data(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_user_info_list()) {
-    user_info_list_ = new ::IM::BaseDefine::UserInfo(*from.user_info_list_);
-  } else {
-    user_info_list_ = nullptr;
+    _this->_impl_.user_info_list_ = new ::IM::BaseDefine::UserInfo(*from._impl_.user_info_list_);
   }
   // @@protoc_insertion_point(copy_constructor:IM.Internal.IMGetUserIdListByNickNameRsp)
 }
 
-void IMGetUserIdListByNickNameRsp::SharedCtor() {
-attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-user_info_list_ = nullptr;
+inline void IMGetUserIdListByNickNameRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.user_info_list_){nullptr}
+  };
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMGetUserIdListByNickNameRsp::~IMGetUserIdListByNickNameRsp() {
   // @@protoc_insertion_point(destructor:IM.Internal.IMGetUserIdListByNickNameRsp)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMGetUserIdListByNickNameRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  attach_data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete user_info_list_;
+  _impl_.attach_data_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.user_info_list_;
 }
 
-void IMGetUserIdListByNickNameRsp::ArenaDtor(void* object) {
-  IMGetUserIdListByNickNameRsp* _this = reinterpret_cast< IMGetUserIdListByNickNameRsp* >(object);
-  (void)_this;
-}
-void IMGetUserIdListByNickNameRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMGetUserIdListByNickNameRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMGetUserIdListByNickNameRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.Internal.IMGetUserIdListByNickNameRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    attach_data_.ClearNonDefaultToEmpty();
+    _impl_.attach_data_.ClearNonDefaultToEmpty();
   }
-  if (GetArenaForAllocation() == nullptr && user_info_list_ != nullptr) {
-    delete user_info_list_;
+  if (GetArenaForAllocation() == nullptr && _impl_.user_info_list_ != nullptr) {
+    delete _impl_.user_info_list_;
   }
-  user_info_list_ = nullptr;
-  _has_bits_.Clear();
+  _impl_.user_info_list_ = nullptr;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMGetUserIdListByNickNameRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMGetUserIdListByNickNameRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .IM.BaseDefine.UserInfo user_info_list = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_user_info_list(), ptr);
           CHK_(ptr);
         } else
@@ -939,9 +1004,9 @@ const char* IMGetUserIdListByNickNameRsp::_InternalParse(const char* ptr, ::PROT
         continue;
       // optional bytes attach_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_attach_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -962,7 +1027,7 @@ const char* IMGetUserIdListByNickNameRsp::_InternalParse(const char* ptr, ::PROT
     CHK_(ptr != nullptr);
   }  // while
 message_done:
-  _has_bits_.Or(has_bits);
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -970,18 +1035,17 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMGetUserIdListByNickNameRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMGetUserIdListByNickNameRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.Internal.IMGetUserIdListByNickNameRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .IM.BaseDefine.UserInfo user_info_list = 1;
   if (this->_internal_has_user_info_list()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::user_info_list(this), target, stream);
+      InternalWriteMessage(1, _Internal::user_info_list(this),
+        _Internal::user_info_list(this).GetCachedSize(), target, stream);
   }
 
   // optional bytes attach_data = 20;
@@ -1002,12 +1066,12 @@ size_t IMGetUserIdListByNickNameRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.Internal.IMGetUserIdListByNickNameRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional bytes attach_data = 20;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -1018,36 +1082,38 @@ size_t IMGetUserIdListByNickNameRsp::ByteSizeLong() const {
   if (this->_internal_has_user_info_list()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *user_info_list_);
+        *_impl_.user_info_list_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMGetUserIdListByNickNameRsp::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMGetUserIdListByNickNameRsp*>(
+  MergeFrom(*::_pbi::DownCast<const IMGetUserIdListByNickNameRsp*>(
       &from));
 }
 
 void IMGetUserIdListByNickNameRsp::MergeFrom(const IMGetUserIdListByNickNameRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMGetUserIdListByNickNameRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMGetUserIdListByNickNameRsp* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.Internal.IMGetUserIdListByNickNameRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_attach_data()) {
-    _internal_set_attach_data(from._internal_attach_data());
+    _this->_internal_set_attach_data(from._internal_attach_data());
   }
   if (from._internal_has_user_info_list()) {
-    _internal_mutable_user_info_list()->::IM::BaseDefine::UserInfo::MergeFrom(from._internal_user_info_list());
+    _this->_internal_mutable_user_info_list()->::IM::BaseDefine::UserInfo::MergeFrom(
+        from._internal_user_info_list());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMGetUserIdListByNickNameRsp::CopyFrom(const IMGetUserIdListByNickNameRsp& from) {
@@ -1066,13 +1132,12 @@ void IMGetUserIdListByNickNameRsp::InternalSwap(IMGetUserIdListByNickNameRsp* ot
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &attach_data_, lhs_arena,
-      &other->attach_data_, rhs_arena
+      &_impl_.attach_data_, lhs_arena,
+      &other->_impl_.attach_data_, rhs_arena
   );
-  swap(user_info_list_, other->user_info_list_);
+  swap(_impl_.user_info_list_, other->_impl_.user_info_list_);
 }
 
 std::string IMGetUserIdListByNickNameRsp::GetTypeName() const {
@@ -1084,16 +1149,20 @@ std::string IMGetUserIdListByNickNameRsp::GetTypeName() const {
 }  // namespace Internal
 }  // namespace IM
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::IM::Internal::IMSyncAuthInfoReq* Arena::CreateMaybeMessage< ::IM::Internal::IMSyncAuthInfoReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::Internal::IMSyncAuthInfoReq*
+Arena::CreateMaybeMessage< ::IM::Internal::IMSyncAuthInfoReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::Internal::IMSyncAuthInfoReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::Internal::IMSyncAuthInfoRsp* Arena::CreateMaybeMessage< ::IM::Internal::IMSyncAuthInfoRsp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::Internal::IMSyncAuthInfoRsp*
+Arena::CreateMaybeMessage< ::IM::Internal::IMSyncAuthInfoRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::Internal::IMSyncAuthInfoRsp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::Internal::IMGetUserIdListByNickNameReq* Arena::CreateMaybeMessage< ::IM::Internal::IMGetUserIdListByNickNameReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::Internal::IMGetUserIdListByNickNameReq*
+Arena::CreateMaybeMessage< ::IM::Internal::IMGetUserIdListByNickNameReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::Internal::IMGetUserIdListByNickNameReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::Internal::IMGetUserIdListByNickNameRsp* Arena::CreateMaybeMessage< ::IM::Internal::IMGetUserIdListByNickNameRsp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::Internal::IMGetUserIdListByNickNameRsp*
+Arena::CreateMaybeMessage< ::IM::Internal::IMGetUserIdListByNickNameRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::Internal::IMGetUserIdListByNickNameRsp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

@@ -17,9 +17,9 @@ Java or Python runtime libraries.  Get it from:
 
 
 
-±¾Ä¿Â¼ÎÄ¼şÏÂÔØurl£º
+æœ¬ç›®å½•æ–‡ä»¶ä¸‹è½½urlï¼š
 https://github.com/google/protobuf/releases
 
-²Î¿¼²©ÎÄ£º
+å‚è€ƒåšæ–‡ï¼š
 http://blog.csdn.net/stpeace/article/details/9155033
 http://www.cnblogs.com/stephen-liu74/archive/2013/01/02/2841485.html

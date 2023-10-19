@@ -3,11 +3,11 @@
 /* this ALWAYS GENERATED file contains the proxy stub code */
 
 
- /* File created by MIDL compiler version 8.01.0626 */
+ /* File created by MIDL compiler version 8.01.0628 */
 /* at Tue Jan 19 04:14:07 2038
  */
 /* Compiler settings for vc140.idl:
-    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0626 
+    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0628 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
@@ -74,43 +74,43 @@ typedef struct _vc140_MIDL_EXPR_FORMAT_STRING
     } vc140_MIDL_EXPR_FORMAT_STRING;
 
 
-static const RPC_SYNTAX_IDENTIFIER  _RpcTransferSyntax = 
+static const RPC_SYNTAX_IDENTIFIER  _RpcTransferSyntax_2_0 = 
 {{0x8A885D04,0x1CEB,0x11C9,{0x9F,0xE8,0x08,0x00,0x2B,0x10,0x48,0x60}},{2,0}};
 
 #if defined(_CONTROL_FLOW_GUARD_XFG)
 #define XFG_TRAMPOLINES(ObjectType)\
-static unsigned long ObjectType ## _UserSize_XFG(unsigned long * pFlags, unsigned long Offset, void * pObject)\
+NDR_SHAREABLE unsigned long ObjectType ## _UserSize_XFG(unsigned long * pFlags, unsigned long Offset, void * pObject)\
 {\
-return  ObjectType ## _UserSize(pFlags, Offset, pObject);\
+return  ObjectType ## _UserSize(pFlags, Offset, (ObjectType *)pObject);\
 }\
-static unsigned char * ObjectType ## _UserMarshal_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
+NDR_SHAREABLE unsigned char * ObjectType ## _UserMarshal_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
 {\
-return ObjectType ## _UserMarshal(pFlags, pBuffer, pObject);\
+return ObjectType ## _UserMarshal(pFlags, pBuffer, (ObjectType *)pObject);\
 }\
-static unsigned char * ObjectType ## _UserUnmarshal_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
+NDR_SHAREABLE unsigned char * ObjectType ## _UserUnmarshal_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
 {\
-return ObjectType ## _UserUnmarshal(pFlags, pBuffer, pObject);\
+return ObjectType ## _UserUnmarshal(pFlags, pBuffer, (ObjectType *)pObject);\
 }\
-static void ObjectType ## _UserFree_XFG(unsigned long * pFlags, void * pObject)\
+NDR_SHAREABLE void ObjectType ## _UserFree_XFG(unsigned long * pFlags, void * pObject)\
 {\
-ObjectType ## _UserFree(pFlags, pObject);\
+ObjectType ## _UserFree(pFlags, (ObjectType *)pObject);\
 }
 #define XFG_TRAMPOLINES64(ObjectType)\
-static unsigned long ObjectType ## _UserSize64_XFG(unsigned long * pFlags, unsigned long Offset, void * pObject)\
+NDR_SHAREABLE unsigned long ObjectType ## _UserSize64_XFG(unsigned long * pFlags, unsigned long Offset, void * pObject)\
 {\
-return  ObjectType ## _UserSize64(pFlags, Offset, pObject);\
+return  ObjectType ## _UserSize64(pFlags, Offset, (ObjectType *)pObject);\
 }\
-static unsigned char * ObjectType ## _UserMarshal64_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
+NDR_SHAREABLE unsigned char * ObjectType ## _UserMarshal64_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
 {\
-return ObjectType ## _UserMarshal64(pFlags, pBuffer, pObject);\
+return ObjectType ## _UserMarshal64(pFlags, pBuffer, (ObjectType *)pObject);\
 }\
-static unsigned char * ObjectType ## _UserUnmarshal64_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
+NDR_SHAREABLE unsigned char * ObjectType ## _UserUnmarshal64_XFG(unsigned long * pFlags, unsigned char * pBuffer, void * pObject)\
 {\
-return ObjectType ## _UserUnmarshal64(pFlags, pBuffer, pObject);\
+return ObjectType ## _UserUnmarshal64(pFlags, pBuffer, (ObjectType *)pObject);\
 }\
-static void ObjectType ## _UserFree64_XFG(unsigned long * pFlags, void * pObject)\
+NDR_SHAREABLE void ObjectType ## _UserFree64_XFG(unsigned long * pFlags, void * pObject)\
 {\
-ObjectType ## _UserFree64(pFlags, pObject);\
+ObjectType ## _UserFree64(pFlags, (ObjectType *)pObject);\
 }
 #define XFG_BIND_TRAMPOLINES(HandleType, ObjectType)\
 static void* ObjectType ## _bind_XFG(HandleType pObject)\
@@ -122,11 +122,13 @@ static void ObjectType ## _unbind_XFG(HandleType pObject, handle_t ServerHandle)
 ObjectType ## _unbind((ObjectType) pObject, ServerHandle);\
 }
 #define XFG_TRAMPOLINE_FPTR(Function) Function ## _XFG
+#define XFG_TRAMPOLINE_FPTR_DEPENDENT_SYMBOL(Symbol) Symbol ## _XFG
 #else
 #define XFG_TRAMPOLINES(ObjectType)
 #define XFG_TRAMPOLINES64(ObjectType)
 #define XFG_BIND_TRAMPOLINES(HandleType, ObjectType)
 #define XFG_TRAMPOLINE_FPTR(Function) Function
+#define XFG_TRAMPOLINE_FPTR_DEPENDENT_SYMBOL(Symbol) Symbol
 #endif
 
 
@@ -134,15 +136,27 @@ extern const vc140_MIDL_TYPE_FORMAT_STRING vc140__MIDL_TypeFormatString;
 extern const vc140_MIDL_PROC_FORMAT_STRING vc140__MIDL_ProcFormatString;
 extern const vc140_MIDL_EXPR_FORMAT_STRING vc140__MIDL_ExprFormatString;
 
+#ifdef __cplusplus
+namespace {
+#endif
 
 extern const MIDL_STUB_DESC Object_StubDesc;
+#ifdef __cplusplus
+}
+#endif
 
 
 extern const MIDL_SERVER_INFO IGifSmileyCtrl_ServerInfo;
 extern const MIDL_STUBLESS_PROXY_INFO IGifSmileyCtrl_ProxyInfo;
 
+#ifdef __cplusplus
+namespace {
+#endif
 
 extern const MIDL_STUB_DESC Object_StubDesc;
+#ifdef __cplusplus
+}
+#endif
 
 
 extern const MIDL_SERVER_INFO IGifSmileyCtrl2_ServerInfo;
@@ -551,10 +565,10 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
         {
             
             {
-            XFG_TRAMPOLINE_FPTR(BSTR_UserSize)
-            ,XFG_TRAMPOLINE_FPTR(BSTR_UserMarshal)
-            ,XFG_TRAMPOLINE_FPTR(BSTR_UserUnmarshal)
-            ,XFG_TRAMPOLINE_FPTR(BSTR_UserFree)
+            (USER_MARSHAL_SIZING_ROUTINE)XFG_TRAMPOLINE_FPTR(BSTR_UserSize)
+            ,(USER_MARSHAL_MARSHALLING_ROUTINE)XFG_TRAMPOLINE_FPTR(BSTR_UserMarshal)
+            ,(USER_MARSHAL_UNMARSHALLING_ROUTINE)XFG_TRAMPOLINE_FPTR(BSTR_UserUnmarshal)
+            ,(USER_MARSHAL_FREEING_ROUTINE)XFG_TRAMPOLINE_FPTR(BSTR_UserFree)
             
             }
             
@@ -634,7 +648,7 @@ CINTERFACE_PROXY_VTABLE(15) _IGifSmileyCtrlProxyVtbl =
 };
 
 
-static const PRPC_STUB_FUNCTION IGifSmileyCtrl_table[] =
+EXTERN_C DECLSPEC_SELECTANY const PRPC_STUB_FUNCTION IGifSmileyCtrl_table[] =
 {
     STUB_FORWARDING_FUNCTION,
     STUB_FORWARDING_FUNCTION,
@@ -711,7 +725,7 @@ CINTERFACE_PROXY_VTABLE(9) _IGifSmileyCtrl2ProxyVtbl =
 };
 
 
-static const PRPC_STUB_FUNCTION IGifSmileyCtrl2_table[] =
+EXTERN_C DECLSPEC_SELECTANY const PRPC_STUB_FUNCTION IGifSmileyCtrl2_table[] =
 {
     STUB_FORWARDING_FUNCTION,
     STUB_FORWARDING_FUNCTION,
@@ -730,6 +744,9 @@ CInterfaceStubVtbl _IGifSmileyCtrl2StubVtbl =
     CStdStubBuffer_DELEGATING_METHODS
 };
 
+#ifdef __cplusplus
+namespace {
+#endif
 static const MIDL_STUB_DESC Object_StubDesc = 
     {
     0,
@@ -744,7 +761,7 @@ static const MIDL_STUB_DESC Object_StubDesc =
     1, /* -error bounds_check flag */
     0x50002, /* Ndr library version */
     0,
-    0x8010272, /* MIDL Version 8.1.626 */
+    0x8010274, /* MIDL Version 8.1.628 */
     0,
     UserMarshalRoutines,
     0,  /* notify & notify_flag routine table */
@@ -753,6 +770,9 @@ static const MIDL_STUB_DESC Object_StubDesc =
     0,   /* proxy/server info */
     0
     };
+#ifdef __cplusplus
+}
+#endif
 
 const CInterfaceProxyVtbl * const _vc140_ProxyVtblList[] = 
 {
@@ -794,7 +814,7 @@ int __stdcall _vc140_IID_Lookup( const IID * pIID, int * pIndex )
     
 }
 
-const ExtendedProxyFileInfo vc140_ProxyFileInfo = 
+EXTERN_C const ExtendedProxyFileInfo vc140_ProxyFileInfo = 
 {
     (PCInterfaceProxyVtblList *) & _vc140_ProxyVtblList,
     (PCInterfaceStubVtblList *) & _vc140_StubVtblList,

@@ -13,198 +13,210 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace IM {
 namespace File {
-constexpr IMFileLoginReq::IMFileLoginReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , user_id_(0u)
-  , file_role_(0)
-{}
+PROTOBUF_CONSTEXPR IMFileLoginReq::IMFileLoginReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.user_id_)*/0u
+  , /*decltype(_impl_.file_role_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileLoginReqDefaultTypeInternal {
-  constexpr IMFileLoginReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileLoginReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileLoginReqDefaultTypeInternal() {}
   union {
     IMFileLoginReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileLoginReqDefaultTypeInternal _IMFileLoginReq_default_instance_;
-constexpr IMFileLoginRsp::IMFileLoginRsp(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , result_code_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileLoginReqDefaultTypeInternal _IMFileLoginReq_default_instance_;
+PROTOBUF_CONSTEXPR IMFileLoginRsp::IMFileLoginRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.result_code_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileLoginRspDefaultTypeInternal {
-  constexpr IMFileLoginRspDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileLoginRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileLoginRspDefaultTypeInternal() {}
   union {
     IMFileLoginRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileLoginRspDefaultTypeInternal _IMFileLoginRsp_default_instance_;
-constexpr IMFileState::IMFileState(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , state_(0)
-
-  , user_id_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileLoginRspDefaultTypeInternal _IMFileLoginRsp_default_instance_;
+PROTOBUF_CONSTEXPR IMFileState::IMFileState(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.state_)*/0
+  , /*decltype(_impl_.user_id_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileStateDefaultTypeInternal {
-  constexpr IMFileStateDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileStateDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileStateDefaultTypeInternal() {}
   union {
     IMFileState _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileStateDefaultTypeInternal _IMFileState_default_instance_;
-constexpr IMFilePullDataReq::IMFilePullDataReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , user_id_(0u)
-  , trans_mode_(0)
-
-  , offset_(0u)
-  , data_size_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileStateDefaultTypeInternal _IMFileState_default_instance_;
+PROTOBUF_CONSTEXPR IMFilePullDataReq::IMFilePullDataReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.user_id_)*/0u
+  , /*decltype(_impl_.trans_mode_)*/0
+  , /*decltype(_impl_.offset_)*/0u
+  , /*decltype(_impl_.data_size_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFilePullDataReqDefaultTypeInternal {
-  constexpr IMFilePullDataReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFilePullDataReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFilePullDataReqDefaultTypeInternal() {}
   union {
     IMFilePullDataReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFilePullDataReqDefaultTypeInternal _IMFilePullDataReq_default_instance_;
-constexpr IMFilePullDataRsp::IMFilePullDataRsp(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , result_code_(0u)
-  , user_id_(0u)
-  , offset_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFilePullDataReqDefaultTypeInternal _IMFilePullDataReq_default_instance_;
+PROTOBUF_CONSTEXPR IMFilePullDataRsp::IMFilePullDataRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.result_code_)*/0u
+  , /*decltype(_impl_.user_id_)*/0u
+  , /*decltype(_impl_.offset_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFilePullDataRspDefaultTypeInternal {
-  constexpr IMFilePullDataRspDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFilePullDataRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFilePullDataRspDefaultTypeInternal() {}
   union {
     IMFilePullDataRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFilePullDataRspDefaultTypeInternal _IMFilePullDataRsp_default_instance_;
-constexpr IMFileReq::IMFileReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : file_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , from_user_id_(0u)
-  , to_user_id_(0u)
-  , file_size_(0u)
-  , trans_mode_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFilePullDataRspDefaultTypeInternal _IMFilePullDataRsp_default_instance_;
+PROTOBUF_CONSTEXPR IMFileReq::IMFileReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.file_name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.from_user_id_)*/0u
+  , /*decltype(_impl_.to_user_id_)*/0u
+  , /*decltype(_impl_.file_size_)*/0u
+  , /*decltype(_impl_.trans_mode_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileReqDefaultTypeInternal {
-  constexpr IMFileReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileReqDefaultTypeInternal() {}
   union {
     IMFileReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileReqDefaultTypeInternal _IMFileReq_default_instance_;
-constexpr IMFileRsp::IMFileRsp(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : ip_addr_list_()
-  , file_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , result_code_(0u)
-  , from_user_id_(0u)
-  , to_user_id_(0u)
-  , trans_mode_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileReqDefaultTypeInternal _IMFileReq_default_instance_;
+PROTOBUF_CONSTEXPR IMFileRsp::IMFileRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.ip_addr_list_)*/{}
+  , /*decltype(_impl_.file_name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.result_code_)*/0u
+  , /*decltype(_impl_.from_user_id_)*/0u
+  , /*decltype(_impl_.to_user_id_)*/0u
+  , /*decltype(_impl_.trans_mode_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileRspDefaultTypeInternal {
-  constexpr IMFileRspDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileRspDefaultTypeInternal() {}
   union {
     IMFileRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileRspDefaultTypeInternal _IMFileRsp_default_instance_;
-constexpr IMFileNotify::IMFileNotify(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : ip_addr_list_()
-  , file_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , from_user_id_(0u)
-  , to_user_id_(0u)
-  , file_size_(0u)
-  , trans_mode_(0)
-
-  , offline_ready_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileRspDefaultTypeInternal _IMFileRsp_default_instance_;
+PROTOBUF_CONSTEXPR IMFileNotify::IMFileNotify(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.ip_addr_list_)*/{}
+  , /*decltype(_impl_.file_name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.from_user_id_)*/0u
+  , /*decltype(_impl_.to_user_id_)*/0u
+  , /*decltype(_impl_.file_size_)*/0u
+  , /*decltype(_impl_.trans_mode_)*/0
+  , /*decltype(_impl_.offline_ready_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileNotifyDefaultTypeInternal {
-  constexpr IMFileNotifyDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileNotifyDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileNotifyDefaultTypeInternal() {}
   union {
     IMFileNotify _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileNotifyDefaultTypeInternal _IMFileNotify_default_instance_;
-constexpr IMFileHasOfflineReq::IMFileHasOfflineReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : attach_data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , user_id_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileNotifyDefaultTypeInternal _IMFileNotify_default_instance_;
+PROTOBUF_CONSTEXPR IMFileHasOfflineReq::IMFileHasOfflineReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.attach_data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.user_id_)*/0u} {}
 struct IMFileHasOfflineReqDefaultTypeInternal {
-  constexpr IMFileHasOfflineReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileHasOfflineReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileHasOfflineReqDefaultTypeInternal() {}
   union {
     IMFileHasOfflineReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileHasOfflineReqDefaultTypeInternal _IMFileHasOfflineReq_default_instance_;
-constexpr IMFileHasOfflineRsp::IMFileHasOfflineRsp(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : offline_file_list_()
-  , ip_addr_list_()
-  , attach_data_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , user_id_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileHasOfflineReqDefaultTypeInternal _IMFileHasOfflineReq_default_instance_;
+PROTOBUF_CONSTEXPR IMFileHasOfflineRsp::IMFileHasOfflineRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.offline_file_list_)*/{}
+  , /*decltype(_impl_.ip_addr_list_)*/{}
+  , /*decltype(_impl_.attach_data_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.user_id_)*/0u} {}
 struct IMFileHasOfflineRspDefaultTypeInternal {
-  constexpr IMFileHasOfflineRspDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileHasOfflineRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileHasOfflineRspDefaultTypeInternal() {}
   union {
     IMFileHasOfflineRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileHasOfflineRspDefaultTypeInternal _IMFileHasOfflineRsp_default_instance_;
-constexpr IMFileAddOfflineReq::IMFileAddOfflineReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , file_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , from_user_id_(0u)
-  , to_user_id_(0u)
-  , file_size_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileHasOfflineRspDefaultTypeInternal _IMFileHasOfflineRsp_default_instance_;
+PROTOBUF_CONSTEXPR IMFileAddOfflineReq::IMFileAddOfflineReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.file_name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.from_user_id_)*/0u
+  , /*decltype(_impl_.to_user_id_)*/0u
+  , /*decltype(_impl_.file_size_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileAddOfflineReqDefaultTypeInternal {
-  constexpr IMFileAddOfflineReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileAddOfflineReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileAddOfflineReqDefaultTypeInternal() {}
   union {
     IMFileAddOfflineReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileAddOfflineReqDefaultTypeInternal _IMFileAddOfflineReq_default_instance_;
-constexpr IMFileDelOfflineReq::IMFileDelOfflineReq(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : task_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , from_user_id_(0u)
-  , to_user_id_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileAddOfflineReqDefaultTypeInternal _IMFileAddOfflineReq_default_instance_;
+PROTOBUF_CONSTEXPR IMFileDelOfflineReq::IMFileDelOfflineReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.task_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.from_user_id_)*/0u
+  , /*decltype(_impl_.to_user_id_)*/0u
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct IMFileDelOfflineReqDefaultTypeInternal {
-  constexpr IMFileDelOfflineReqDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR IMFileDelOfflineReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~IMFileDelOfflineReqDefaultTypeInternal() {}
   union {
     IMFileDelOfflineReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT IMFileDelOfflineReqDefaultTypeInternal _IMFileDelOfflineReq_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 IMFileDelOfflineReqDefaultTypeInternal _IMFileDelOfflineReq_default_instance_;
 }  // namespace File
 }  // namespace IM
 namespace IM {
@@ -219,97 +231,108 @@ class IMFileLoginReq::_Internal {
 IMFileLoginReq::IMFileLoginReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileLoginReq)
 }
 IMFileLoginReq::IMFileLoginReq(const IMFileLoginReq& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileLoginReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.user_id_){}
+    , decltype(_impl_.file_role_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&file_role_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(file_role_));
+  ::memcpy(&_impl_.user_id_, &from._impl_.user_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.file_role_) -
+    reinterpret_cast<char*>(&_impl_.user_id_)) + sizeof(_impl_.file_role_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileLoginReq)
 }
 
-void IMFileLoginReq::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&file_role_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(file_role_));
+inline void IMFileLoginReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.user_id_){0u}
+    , decltype(_impl_.file_role_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileLoginReq::~IMFileLoginReq() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileLoginReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileLoginReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
 }
 
-void IMFileLoginReq::ArenaDtor(void* object) {
-  IMFileLoginReq* _this = reinterpret_cast< IMFileLoginReq* >(object);
-  (void)_this;
-}
-void IMFileLoginReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileLoginReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileLoginReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileLoginReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&file_role_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(file_role_));
+  _impl_.task_id_.ClearToEmpty();
+  ::memset(&_impl_.user_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.file_role_) -
+      reinterpret_cast<char*>(&_impl_.user_id_)) + sizeof(_impl_.file_role_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileLoginReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileLoginReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string task_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // .IM.BaseDefine.ClientFileRole file_role = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_file_role(static_cast<::IM::BaseDefine::ClientFileRole>(val));
         } else
@@ -338,16 +361,16 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileLoginReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileLoginReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileLoginReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 user_id = 1;
   if (this->_internal_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_user_id(), target);
   }
 
   // string task_id = 2;
@@ -363,7 +386,7 @@ failure:
   // .IM.BaseDefine.ClientFileRole file_role = 3;
   if (this->_internal_file_role() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_file_role(), target);
   }
 
@@ -379,7 +402,7 @@ size_t IMFileLoginReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileLoginReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -392,45 +415,46 @@ size_t IMFileLoginReq::ByteSizeLong() const {
 
   // uint32 user_id = 1;
   if (this->_internal_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
   }
 
   // .IM.BaseDefine.ClientFileRole file_role = 3;
   if (this->_internal_file_role() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_file_role());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_file_role());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileLoginReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileLoginReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileLoginReq*>(
       &from));
 }
 
 void IMFileLoginReq::MergeFrom(const IMFileLoginReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileLoginReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileLoginReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileLoginReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_file_role() != 0) {
-    _internal_set_file_role(from._internal_file_role());
+    _this->_internal_set_file_role(from._internal_file_role());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileLoginReq::CopyFrom(const IMFileLoginReq& from) {
@@ -450,16 +474,15 @@ void IMFileLoginReq::InternalSwap(IMFileLoginReq* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileLoginReq, file_role_)
-      + sizeof(IMFileLoginReq::file_role_)
-      - PROTOBUF_FIELD_OFFSET(IMFileLoginReq, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
+      PROTOBUF_FIELD_OFFSET(IMFileLoginReq, _impl_.file_role_)
+      + sizeof(IMFileLoginReq::_impl_.file_role_)
+      - PROTOBUF_FIELD_OFFSET(IMFileLoginReq, _impl_.user_id_)>(
+          reinterpret_cast<char*>(&_impl_.user_id_),
+          reinterpret_cast<char*>(&other->_impl_.user_id_));
 }
 
 std::string IMFileLoginReq::GetTypeName() const {
@@ -476,83 +499,95 @@ class IMFileLoginRsp::_Internal {
 IMFileLoginRsp::IMFileLoginRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileLoginRsp)
 }
 IMFileLoginRsp::IMFileLoginRsp(const IMFileLoginRsp& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileLoginRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.result_code_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  result_code_ = from.result_code_;
+  _this->_impl_.result_code_ = from._impl_.result_code_;
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileLoginRsp)
 }
 
-void IMFileLoginRsp::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-result_code_ = 0u;
+inline void IMFileLoginRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.result_code_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileLoginRsp::~IMFileLoginRsp() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileLoginRsp)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileLoginRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
 }
 
-void IMFileLoginRsp::ArenaDtor(void* object) {
-  IMFileLoginRsp* _this = reinterpret_cast< IMFileLoginRsp* >(object);
-  (void)_this;
-}
-void IMFileLoginRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileLoginRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileLoginRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileLoginRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  result_code_ = 0u;
+  _impl_.task_id_.ClearToEmpty();
+  _impl_.result_code_ = 0u;
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileLoginRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileLoginRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 result_code = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          result_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.result_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string task_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
@@ -579,16 +614,16 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileLoginRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileLoginRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileLoginRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 result_code = 1;
   if (this->_internal_result_code() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_result_code(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_result_code(), target);
   }
 
   // string task_id = 2;
@@ -613,7 +648,7 @@ size_t IMFileLoginRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileLoginRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -626,36 +661,37 @@ size_t IMFileLoginRsp::ByteSizeLong() const {
 
   // uint32 result_code = 1;
   if (this->_internal_result_code() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_result_code());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_result_code());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileLoginRsp::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileLoginRsp*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileLoginRsp*>(
       &from));
 }
 
 void IMFileLoginRsp::MergeFrom(const IMFileLoginRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileLoginRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileLoginRsp* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileLoginRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_result_code() != 0) {
-    _internal_set_result_code(from._internal_result_code());
+    _this->_internal_set_result_code(from._internal_result_code());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileLoginRsp::CopyFrom(const IMFileLoginRsp& from) {
@@ -675,11 +711,10 @@ void IMFileLoginRsp::InternalSwap(IMFileLoginRsp* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
-  swap(result_code_, other->result_code_);
+  swap(_impl_.result_code_, other->_impl_.result_code_);
 }
 
 std::string IMFileLoginRsp::GetTypeName() const {
@@ -696,79 +731,90 @@ class IMFileState::_Internal {
 IMFileState::IMFileState(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileState)
 }
 IMFileState::IMFileState(const IMFileState& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileState* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.state_){}
+    , decltype(_impl_.user_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&state_, &from.state_,
-    static_cast<size_t>(reinterpret_cast<char*>(&user_id_) -
-    reinterpret_cast<char*>(&state_)) + sizeof(user_id_));
+  ::memcpy(&_impl_.state_, &from._impl_.state_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.user_id_) -
+    reinterpret_cast<char*>(&_impl_.state_)) + sizeof(_impl_.user_id_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileState)
 }
 
-void IMFileState::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&state_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&user_id_) -
-    reinterpret_cast<char*>(&state_)) + sizeof(user_id_));
+inline void IMFileState::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.state_){0}
+    , decltype(_impl_.user_id_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileState::~IMFileState() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileState)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileState::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
 }
 
-void IMFileState::ArenaDtor(void* object) {
-  IMFileState* _this = reinterpret_cast< IMFileState* >(object);
-  (void)_this;
-}
-void IMFileState::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileState::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileState::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileState)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  ::memset(&state_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&user_id_) -
-      reinterpret_cast<char*>(&state_)) + sizeof(user_id_));
+  _impl_.task_id_.ClearToEmpty();
+  ::memset(&_impl_.state_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.user_id_) -
+      reinterpret_cast<char*>(&_impl_.state_)) + sizeof(_impl_.user_id_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileState::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .IM.BaseDefine.ClientFileState state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_state(static_cast<::IM::BaseDefine::ClientFileState>(val));
         } else
@@ -776,18 +822,18 @@ const char* IMFileState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
         continue;
       // string task_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // uint32 user_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _impl_.user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -815,16 +861,16 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileState::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileState::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileState)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .IM.BaseDefine.ClientFileState state = 1;
   if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       1, this->_internal_state(), target);
   }
 
@@ -841,7 +887,7 @@ failure:
   // uint32 user_id = 3;
   if (this->_internal_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_user_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -856,7 +902,7 @@ size_t IMFileState::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileState)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -870,44 +916,45 @@ size_t IMFileState::ByteSizeLong() const {
   // .IM.BaseDefine.ClientFileState state = 1;
   if (this->_internal_state() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_state());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_state());
   }
 
   // uint32 user_id = 3;
   if (this->_internal_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileState::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileState*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileState*>(
       &from));
 }
 
 void IMFileState::MergeFrom(const IMFileState& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileState)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileState* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileState)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_state() != 0) {
-    _internal_set_state(from._internal_state());
+    _this->_internal_set_state(from._internal_state());
   }
   if (from._internal_user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
+    _this->_internal_set_user_id(from._internal_user_id());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileState::CopyFrom(const IMFileState& from) {
@@ -927,16 +974,15 @@ void IMFileState::InternalSwap(IMFileState* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileState, user_id_)
-      + sizeof(IMFileState::user_id_)
-      - PROTOBUF_FIELD_OFFSET(IMFileState, state_)>(
-          reinterpret_cast<char*>(&state_),
-          reinterpret_cast<char*>(&other->state_));
+      PROTOBUF_FIELD_OFFSET(IMFileState, _impl_.user_id_)
+      + sizeof(IMFileState::_impl_.user_id_)
+      - PROTOBUF_FIELD_OFFSET(IMFileState, _impl_.state_)>(
+          reinterpret_cast<char*>(&_impl_.state_),
+          reinterpret_cast<char*>(&other->_impl_.state_));
 }
 
 std::string IMFileState::GetTypeName() const {
@@ -953,97 +999,112 @@ class IMFilePullDataReq::_Internal {
 IMFilePullDataReq::IMFilePullDataReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFilePullDataReq)
 }
 IMFilePullDataReq::IMFilePullDataReq(const IMFilePullDataReq& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFilePullDataReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.user_id_){}
+    , decltype(_impl_.trans_mode_){}
+    , decltype(_impl_.offset_){}
+    , decltype(_impl_.data_size_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&data_size_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(data_size_));
+  ::memcpy(&_impl_.user_id_, &from._impl_.user_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.data_size_) -
+    reinterpret_cast<char*>(&_impl_.user_id_)) + sizeof(_impl_.data_size_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFilePullDataReq)
 }
 
-void IMFilePullDataReq::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&data_size_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(data_size_));
+inline void IMFilePullDataReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.user_id_){0u}
+    , decltype(_impl_.trans_mode_){0}
+    , decltype(_impl_.offset_){0u}
+    , decltype(_impl_.data_size_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFilePullDataReq::~IMFilePullDataReq() {
   // @@protoc_insertion_point(destructor:IM.File.IMFilePullDataReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFilePullDataReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
 }
 
-void IMFilePullDataReq::ArenaDtor(void* object) {
-  IMFilePullDataReq* _this = reinterpret_cast< IMFilePullDataReq* >(object);
-  (void)_this;
-}
-void IMFilePullDataReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFilePullDataReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFilePullDataReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFilePullDataReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&data_size_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(data_size_));
+  _impl_.task_id_.ClearToEmpty();
+  ::memset(&_impl_.user_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.data_size_) -
+      reinterpret_cast<char*>(&_impl_.user_id_)) + sizeof(_impl_.data_size_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFilePullDataReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFilePullDataReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string task_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // uint32 user_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // .IM.BaseDefine.FileType trans_mode = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_trans_mode(static_cast<::IM::BaseDefine::FileType>(val));
         } else
@@ -1051,16 +1112,16 @@ const char* IMFilePullDataReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
         continue;
       // uint32 offset = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          offset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _impl_.offset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 data_size = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          data_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          _impl_.data_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -1088,10 +1149,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFilePullDataReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFilePullDataReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFilePullDataReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string task_id = 1;
@@ -1107,26 +1168,26 @@ failure:
   // uint32 user_id = 2;
   if (this->_internal_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_user_id(), target);
   }
 
   // .IM.BaseDefine.FileType trans_mode = 3;
   if (this->_internal_trans_mode() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_trans_mode(), target);
   }
 
   // uint32 offset = 4;
   if (this->_internal_offset() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_offset(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_offset(), target);
   }
 
   // uint32 data_size = 5;
   if (this->_internal_data_size() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_data_size(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_data_size(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1141,7 +1202,7 @@ size_t IMFilePullDataReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFilePullDataReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1154,61 +1215,62 @@ size_t IMFilePullDataReq::ByteSizeLong() const {
 
   // uint32 user_id = 2;
   if (this->_internal_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
   }
 
   // .IM.BaseDefine.FileType trans_mode = 3;
   if (this->_internal_trans_mode() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_trans_mode());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_trans_mode());
   }
 
   // uint32 offset = 4;
   if (this->_internal_offset() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_offset());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_offset());
   }
 
   // uint32 data_size = 5;
   if (this->_internal_data_size() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_data_size());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_data_size());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFilePullDataReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFilePullDataReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMFilePullDataReq*>(
       &from));
 }
 
 void IMFilePullDataReq::MergeFrom(const IMFilePullDataReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFilePullDataReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFilePullDataReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFilePullDataReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_trans_mode() != 0) {
-    _internal_set_trans_mode(from._internal_trans_mode());
+    _this->_internal_set_trans_mode(from._internal_trans_mode());
   }
   if (from._internal_offset() != 0) {
-    _internal_set_offset(from._internal_offset());
+    _this->_internal_set_offset(from._internal_offset());
   }
   if (from._internal_data_size() != 0) {
-    _internal_set_data_size(from._internal_data_size());
+    _this->_internal_set_data_size(from._internal_data_size());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFilePullDataReq::CopyFrom(const IMFilePullDataReq& from) {
@@ -1228,16 +1290,15 @@ void IMFilePullDataReq::InternalSwap(IMFilePullDataReq* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFilePullDataReq, data_size_)
-      + sizeof(IMFilePullDataReq::data_size_)
-      - PROTOBUF_FIELD_OFFSET(IMFilePullDataReq, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
+      PROTOBUF_FIELD_OFFSET(IMFilePullDataReq, _impl_.data_size_)
+      + sizeof(IMFilePullDataReq::_impl_.data_size_)
+      - PROTOBUF_FIELD_OFFSET(IMFilePullDataReq, _impl_.user_id_)>(
+          reinterpret_cast<char*>(&_impl_.user_id_),
+          reinterpret_cast<char*>(&other->_impl_.user_id_));
 }
 
 std::string IMFilePullDataReq::GetTypeName() const {
@@ -1254,122 +1315,143 @@ class IMFilePullDataRsp::_Internal {
 IMFilePullDataRsp::IMFilePullDataRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFilePullDataRsp)
 }
 IMFilePullDataRsp::IMFilePullDataRsp(const IMFilePullDataRsp& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFilePullDataRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.data_){}
+    , decltype(_impl_.result_code_){}
+    , decltype(_impl_.user_id_){}
+    , decltype(_impl_.offset_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_data().empty()) {
-    data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.data_.Set(from._internal_data(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&result_code_, &from.result_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&offset_) -
-    reinterpret_cast<char*>(&result_code_)) + sizeof(offset_));
+  ::memcpy(&_impl_.result_code_, &from._impl_.result_code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.offset_) -
+    reinterpret_cast<char*>(&_impl_.result_code_)) + sizeof(_impl_.offset_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFilePullDataRsp)
 }
 
-void IMFilePullDataRsp::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&result_code_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&offset_) -
-    reinterpret_cast<char*>(&result_code_)) + sizeof(offset_));
+inline void IMFilePullDataRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.data_){}
+    , decltype(_impl_.result_code_){0u}
+    , decltype(_impl_.user_id_){0u}
+    , decltype(_impl_.offset_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFilePullDataRsp::~IMFilePullDataRsp() {
   // @@protoc_insertion_point(destructor:IM.File.IMFilePullDataRsp)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFilePullDataRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
+  _impl_.data_.Destroy();
 }
 
-void IMFilePullDataRsp::ArenaDtor(void* object) {
-  IMFilePullDataRsp* _this = reinterpret_cast< IMFilePullDataRsp* >(object);
-  (void)_this;
-}
-void IMFilePullDataRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFilePullDataRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFilePullDataRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFilePullDataRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  data_.ClearToEmpty();
-  ::memset(&result_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&offset_) -
-      reinterpret_cast<char*>(&result_code_)) + sizeof(offset_));
+  _impl_.task_id_.ClearToEmpty();
+  _impl_.data_.ClearToEmpty();
+  ::memset(&_impl_.result_code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.offset_) -
+      reinterpret_cast<char*>(&_impl_.result_code_)) + sizeof(_impl_.offset_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFilePullDataRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFilePullDataRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 result_code = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          result_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.result_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string task_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // uint32 user_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _impl_.user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 offset = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          offset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _impl_.offset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // bytes data = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -1397,16 +1479,16 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFilePullDataRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFilePullDataRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFilePullDataRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 result_code = 1;
   if (this->_internal_result_code() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_result_code(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_result_code(), target);
   }
 
   // string task_id = 2;
@@ -1422,13 +1504,13 @@ failure:
   // uint32 user_id = 3;
   if (this->_internal_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_user_id(), target);
   }
 
   // uint32 offset = 4;
   if (this->_internal_offset() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_offset(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_offset(), target);
   }
 
   // bytes data = 5;
@@ -1449,7 +1531,7 @@ size_t IMFilePullDataRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFilePullDataRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1469,55 +1551,56 @@ size_t IMFilePullDataRsp::ByteSizeLong() const {
 
   // uint32 result_code = 1;
   if (this->_internal_result_code() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_result_code());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_result_code());
   }
 
   // uint32 user_id = 3;
   if (this->_internal_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
   }
 
   // uint32 offset = 4;
   if (this->_internal_offset() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_offset());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_offset());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFilePullDataRsp::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFilePullDataRsp*>(
+  MergeFrom(*::_pbi::DownCast<const IMFilePullDataRsp*>(
       &from));
 }
 
 void IMFilePullDataRsp::MergeFrom(const IMFilePullDataRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFilePullDataRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFilePullDataRsp* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFilePullDataRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (!from._internal_data().empty()) {
-    _internal_set_data(from._internal_data());
+    _this->_internal_set_data(from._internal_data());
   }
   if (from._internal_result_code() != 0) {
-    _internal_set_result_code(from._internal_result_code());
+    _this->_internal_set_result_code(from._internal_result_code());
   }
   if (from._internal_user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
+    _this->_internal_set_user_id(from._internal_user_id());
   }
   if (from._internal_offset() != 0) {
-    _internal_set_offset(from._internal_offset());
+    _this->_internal_set_offset(from._internal_offset());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFilePullDataRsp::CopyFrom(const IMFilePullDataRsp& from) {
@@ -1537,21 +1620,19 @@ void IMFilePullDataRsp::InternalSwap(IMFilePullDataRsp* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &data_, lhs_arena,
-      &other->data_, rhs_arena
+      &_impl_.data_, lhs_arena,
+      &other->_impl_.data_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFilePullDataRsp, offset_)
-      + sizeof(IMFilePullDataRsp::offset_)
-      - PROTOBUF_FIELD_OFFSET(IMFilePullDataRsp, result_code_)>(
-          reinterpret_cast<char*>(&result_code_),
-          reinterpret_cast<char*>(&other->result_code_));
+      PROTOBUF_FIELD_OFFSET(IMFilePullDataRsp, _impl_.offset_)
+      + sizeof(IMFilePullDataRsp::_impl_.offset_)
+      - PROTOBUF_FIELD_OFFSET(IMFilePullDataRsp, _impl_.result_code_)>(
+          reinterpret_cast<char*>(&_impl_.result_code_),
+          reinterpret_cast<char*>(&other->_impl_.result_code_));
 }
 
 std::string IMFilePullDataRsp::GetTypeName() const {
@@ -1568,113 +1649,128 @@ class IMFileReq::_Internal {
 IMFileReq::IMFileReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileReq)
 }
 IMFileReq::IMFileReq(const IMFileReq& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.file_name_){}
+    , decltype(_impl_.from_user_id_){}
+    , decltype(_impl_.to_user_id_){}
+    , decltype(_impl_.file_size_){}
+    , decltype(_impl_.trans_mode_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_file_name().empty()) {
-    file_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_file_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.file_name_.Set(from._internal_file_name(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&from_user_id_, &from.from_user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&trans_mode_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(trans_mode_));
+  ::memcpy(&_impl_.from_user_id_, &from._impl_.from_user_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.trans_mode_) -
+    reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.trans_mode_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileReq)
 }
 
-void IMFileReq::SharedCtor() {
-file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&from_user_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&trans_mode_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(trans_mode_));
+inline void IMFileReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.file_name_){}
+    , decltype(_impl_.from_user_id_){0u}
+    , decltype(_impl_.to_user_id_){0u}
+    , decltype(_impl_.file_size_){0u}
+    , decltype(_impl_.trans_mode_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileReq::~IMFileReq() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  file_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.file_name_.Destroy();
 }
 
-void IMFileReq::ArenaDtor(void* object) {
-  IMFileReq* _this = reinterpret_cast< IMFileReq* >(object);
-  (void)_this;
-}
-void IMFileReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  file_name_.ClearToEmpty();
-  ::memset(&from_user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&trans_mode_) -
-      reinterpret_cast<char*>(&from_user_id_)) + sizeof(trans_mode_));
+  _impl_.file_name_.ClearToEmpty();
+  ::memset(&_impl_.from_user_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.trans_mode_) -
+      reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.trans_mode_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 from_user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 to_user_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string file_name = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_file_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // uint32 file_size = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          file_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _impl_.file_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // .IM.BaseDefine.FileType trans_mode = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_trans_mode(static_cast<::IM::BaseDefine::FileType>(val));
         } else
@@ -1703,22 +1799,22 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
   }
 
   // string file_name = 3;
@@ -1734,13 +1830,13 @@ failure:
   // uint32 file_size = 4;
   if (this->_internal_file_size() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_file_size(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_file_size(), target);
   }
 
   // .IM.BaseDefine.FileType trans_mode = 5;
   if (this->_internal_trans_mode() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       5, this->_internal_trans_mode(), target);
   }
 
@@ -1756,7 +1852,7 @@ size_t IMFileReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1769,61 +1865,62 @@ size_t IMFileReq::ByteSizeLong() const {
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
   }
 
   // uint32 file_size = 4;
   if (this->_internal_file_size() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_file_size());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_file_size());
   }
 
   // .IM.BaseDefine.FileType trans_mode = 5;
   if (this->_internal_trans_mode() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_trans_mode());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_trans_mode());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileReq*>(
       &from));
 }
 
 void IMFileReq::MergeFrom(const IMFileReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_file_name().empty()) {
-    _internal_set_file_name(from._internal_file_name());
+    _this->_internal_set_file_name(from._internal_file_name());
   }
   if (from._internal_from_user_id() != 0) {
-    _internal_set_from_user_id(from._internal_from_user_id());
+    _this->_internal_set_from_user_id(from._internal_from_user_id());
   }
   if (from._internal_to_user_id() != 0) {
-    _internal_set_to_user_id(from._internal_to_user_id());
+    _this->_internal_set_to_user_id(from._internal_to_user_id());
   }
   if (from._internal_file_size() != 0) {
-    _internal_set_file_size(from._internal_file_size());
+    _this->_internal_set_file_size(from._internal_file_size());
   }
   if (from._internal_trans_mode() != 0) {
-    _internal_set_trans_mode(from._internal_trans_mode());
+    _this->_internal_set_trans_mode(from._internal_trans_mode());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileReq::CopyFrom(const IMFileReq& from) {
@@ -1843,16 +1940,15 @@ void IMFileReq::InternalSwap(IMFileReq* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &file_name_, lhs_arena,
-      &other->file_name_, rhs_arena
+      &_impl_.file_name_, lhs_arena,
+      &other->_impl_.file_name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileReq, trans_mode_)
-      + sizeof(IMFileReq::trans_mode_)
-      - PROTOBUF_FIELD_OFFSET(IMFileReq, from_user_id_)>(
-          reinterpret_cast<char*>(&from_user_id_),
-          reinterpret_cast<char*>(&other->from_user_id_));
+      PROTOBUF_FIELD_OFFSET(IMFileReq, _impl_.trans_mode_)
+      + sizeof(IMFileReq::_impl_.trans_mode_)
+      - PROTOBUF_FIELD_OFFSET(IMFileReq, _impl_.from_user_id_)>(
+          reinterpret_cast<char*>(&_impl_.from_user_id_),
+          reinterpret_cast<char*>(&other->_impl_.from_user_id_));
 }
 
 std::string IMFileReq::GetTypeName() const {
@@ -1867,138 +1963,162 @@ class IMFileRsp::_Internal {
 };
 
 void IMFileRsp::clear_ip_addr_list() {
-  ip_addr_list_.Clear();
+  _impl_.ip_addr_list_.Clear();
 }
 IMFileRsp::IMFileRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned),
-  ip_addr_list_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileRsp)
 }
 IMFileRsp::IMFileRsp(const IMFileRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      ip_addr_list_(from.ip_addr_list_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ip_addr_list_){from._impl_.ip_addr_list_}
+    , decltype(_impl_.file_name_){}
+    , decltype(_impl_.task_id_){}
+    , decltype(_impl_.result_code_){}
+    , decltype(_impl_.from_user_id_){}
+    , decltype(_impl_.to_user_id_){}
+    , decltype(_impl_.trans_mode_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_file_name().empty()) {
-    file_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_file_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.file_name_.Set(from._internal_file_name(), 
+      _this->GetArenaForAllocation());
   }
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&result_code_, &from.result_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&trans_mode_) -
-    reinterpret_cast<char*>(&result_code_)) + sizeof(trans_mode_));
+  ::memcpy(&_impl_.result_code_, &from._impl_.result_code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.trans_mode_) -
+    reinterpret_cast<char*>(&_impl_.result_code_)) + sizeof(_impl_.trans_mode_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileRsp)
 }
 
-void IMFileRsp::SharedCtor() {
-file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&result_code_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&trans_mode_) -
-    reinterpret_cast<char*>(&result_code_)) + sizeof(trans_mode_));
+inline void IMFileRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ip_addr_list_){arena}
+    , decltype(_impl_.file_name_){}
+    , decltype(_impl_.task_id_){}
+    , decltype(_impl_.result_code_){0u}
+    , decltype(_impl_.from_user_id_){0u}
+    , decltype(_impl_.to_user_id_){0u}
+    , decltype(_impl_.trans_mode_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileRsp::~IMFileRsp() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileRsp)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  file_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.ip_addr_list_.~RepeatedPtrField();
+  _impl_.file_name_.Destroy();
+  _impl_.task_id_.Destroy();
 }
 
-void IMFileRsp::ArenaDtor(void* object) {
-  IMFileRsp* _this = reinterpret_cast< IMFileRsp* >(object);
-  (void)_this;
-}
-void IMFileRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ip_addr_list_.Clear();
-  file_name_.ClearToEmpty();
-  task_id_.ClearToEmpty();
-  ::memset(&result_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&trans_mode_) -
-      reinterpret_cast<char*>(&result_code_)) + sizeof(trans_mode_));
+  _impl_.ip_addr_list_.Clear();
+  _impl_.file_name_.ClearToEmpty();
+  _impl_.task_id_.ClearToEmpty();
+  ::memset(&_impl_.result_code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.trans_mode_) -
+      reinterpret_cast<char*>(&_impl_.result_code_)) + sizeof(_impl_.trans_mode_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 result_code = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          result_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.result_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 from_user_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 to_user_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _impl_.to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string file_name = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_file_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // string task_id = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // repeated .IM.BaseDefine.IpAddr ip_addr_list = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2011,8 +2131,8 @@ const char* IMFileRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
         continue;
       // .IM.BaseDefine.FileType trans_mode = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_trans_mode(static_cast<::IM::BaseDefine::FileType>(val));
         } else
@@ -2041,28 +2161,28 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 result_code = 1;
   if (this->_internal_result_code() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_result_code(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_result_code(), target);
   }
 
   // uint32 from_user_id = 2;
   if (this->_internal_from_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_from_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_from_user_id(), target);
   }
 
   // uint32 to_user_id = 3;
   if (this->_internal_to_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_to_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_to_user_id(), target);
   }
 
   // string file_name = 4;
@@ -2086,17 +2206,17 @@ failure:
   }
 
   // repeated .IM.BaseDefine.IpAddr ip_addr_list = 6;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_ip_addr_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_ip_addr_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_ip_addr_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_ip_addr_list(i), target, stream);
+        InternalWriteMessage(6, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // .IM.BaseDefine.FileType trans_mode = 7;
   if (this->_internal_trans_mode() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       7, this->_internal_trans_mode(), target);
   }
 
@@ -2112,13 +2232,13 @@ size_t IMFileRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .IM.BaseDefine.IpAddr ip_addr_list = 6;
   total_size += 1UL * this->_internal_ip_addr_list_size();
-  for (const auto& msg : this->ip_addr_list_) {
+  for (const auto& msg : this->_impl_.ip_addr_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -2139,65 +2259,66 @@ size_t IMFileRsp::ByteSizeLong() const {
 
   // uint32 result_code = 1;
   if (this->_internal_result_code() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_result_code());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_result_code());
   }
 
   // uint32 from_user_id = 2;
   if (this->_internal_from_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
   }
 
   // uint32 to_user_id = 3;
   if (this->_internal_to_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
   }
 
   // .IM.BaseDefine.FileType trans_mode = 7;
   if (this->_internal_trans_mode() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_trans_mode());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_trans_mode());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileRsp::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileRsp*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileRsp*>(
       &from));
 }
 
 void IMFileRsp::MergeFrom(const IMFileRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileRsp* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  ip_addr_list_.MergeFrom(from.ip_addr_list_);
+  _this->_impl_.ip_addr_list_.MergeFrom(from._impl_.ip_addr_list_);
   if (!from._internal_file_name().empty()) {
-    _internal_set_file_name(from._internal_file_name());
+    _this->_internal_set_file_name(from._internal_file_name());
   }
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_result_code() != 0) {
-    _internal_set_result_code(from._internal_result_code());
+    _this->_internal_set_result_code(from._internal_result_code());
   }
   if (from._internal_from_user_id() != 0) {
-    _internal_set_from_user_id(from._internal_from_user_id());
+    _this->_internal_set_from_user_id(from._internal_from_user_id());
   }
   if (from._internal_to_user_id() != 0) {
-    _internal_set_to_user_id(from._internal_to_user_id());
+    _this->_internal_set_to_user_id(from._internal_to_user_id());
   }
   if (from._internal_trans_mode() != 0) {
-    _internal_set_trans_mode(from._internal_trans_mode());
+    _this->_internal_set_trans_mode(from._internal_trans_mode());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileRsp::CopyFrom(const IMFileRsp& from) {
@@ -2216,23 +2337,21 @@ void IMFileRsp::InternalSwap(IMFileRsp* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ip_addr_list_.InternalSwap(&other->ip_addr_list_);
+  _impl_.ip_addr_list_.InternalSwap(&other->_impl_.ip_addr_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &file_name_, lhs_arena,
-      &other->file_name_, rhs_arena
+      &_impl_.file_name_, lhs_arena,
+      &other->_impl_.file_name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileRsp, trans_mode_)
-      + sizeof(IMFileRsp::trans_mode_)
-      - PROTOBUF_FIELD_OFFSET(IMFileRsp, result_code_)>(
-          reinterpret_cast<char*>(&result_code_),
-          reinterpret_cast<char*>(&other->result_code_));
+      PROTOBUF_FIELD_OFFSET(IMFileRsp, _impl_.trans_mode_)
+      + sizeof(IMFileRsp::_impl_.trans_mode_)
+      - PROTOBUF_FIELD_OFFSET(IMFileRsp, _impl_.result_code_)>(
+          reinterpret_cast<char*>(&_impl_.result_code_),
+          reinterpret_cast<char*>(&other->_impl_.result_code_));
 }
 
 std::string IMFileRsp::GetTypeName() const {
@@ -2247,138 +2366,164 @@ class IMFileNotify::_Internal {
 };
 
 void IMFileNotify::clear_ip_addr_list() {
-  ip_addr_list_.Clear();
+  _impl_.ip_addr_list_.Clear();
 }
 IMFileNotify::IMFileNotify(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned),
-  ip_addr_list_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileNotify)
 }
 IMFileNotify::IMFileNotify(const IMFileNotify& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      ip_addr_list_(from.ip_addr_list_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileNotify* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ip_addr_list_){from._impl_.ip_addr_list_}
+    , decltype(_impl_.file_name_){}
+    , decltype(_impl_.task_id_){}
+    , decltype(_impl_.from_user_id_){}
+    , decltype(_impl_.to_user_id_){}
+    , decltype(_impl_.file_size_){}
+    , decltype(_impl_.trans_mode_){}
+    , decltype(_impl_.offline_ready_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_file_name().empty()) {
-    file_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_file_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.file_name_.Set(from._internal_file_name(), 
+      _this->GetArenaForAllocation());
   }
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&from_user_id_, &from.from_user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&offline_ready_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(offline_ready_));
+  ::memcpy(&_impl_.from_user_id_, &from._impl_.from_user_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.offline_ready_) -
+    reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.offline_ready_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileNotify)
 }
 
-void IMFileNotify::SharedCtor() {
-file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&from_user_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&offline_ready_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(offline_ready_));
+inline void IMFileNotify::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.ip_addr_list_){arena}
+    , decltype(_impl_.file_name_){}
+    , decltype(_impl_.task_id_){}
+    , decltype(_impl_.from_user_id_){0u}
+    , decltype(_impl_.to_user_id_){0u}
+    , decltype(_impl_.file_size_){0u}
+    , decltype(_impl_.trans_mode_){0}
+    , decltype(_impl_.offline_ready_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileNotify::~IMFileNotify() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileNotify)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileNotify::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  file_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.ip_addr_list_.~RepeatedPtrField();
+  _impl_.file_name_.Destroy();
+  _impl_.task_id_.Destroy();
 }
 
-void IMFileNotify::ArenaDtor(void* object) {
-  IMFileNotify* _this = reinterpret_cast< IMFileNotify* >(object);
-  (void)_this;
-}
-void IMFileNotify::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileNotify::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileNotify::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileNotify)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ip_addr_list_.Clear();
-  file_name_.ClearToEmpty();
-  task_id_.ClearToEmpty();
-  ::memset(&from_user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&offline_ready_) -
-      reinterpret_cast<char*>(&from_user_id_)) + sizeof(offline_ready_));
+  _impl_.ip_addr_list_.Clear();
+  _impl_.file_name_.ClearToEmpty();
+  _impl_.task_id_.ClearToEmpty();
+  ::memset(&_impl_.from_user_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.offline_ready_) -
+      reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.offline_ready_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileNotify::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileNotify::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 from_user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 to_user_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string file_name = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_file_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // uint32 file_size = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          file_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _impl_.file_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string task_id = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // repeated .IM.BaseDefine.IpAddr ip_addr_list = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2391,8 +2536,8 @@ const char* IMFileNotify::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
         continue;
       // .IM.BaseDefine.FileType trans_mode = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_trans_mode(static_cast<::IM::BaseDefine::FileType>(val));
         } else
@@ -2400,8 +2545,8 @@ const char* IMFileNotify::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
         continue;
       // uint32 offline_ready = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          offline_ready_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _impl_.offline_ready_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -2429,22 +2574,22 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileNotify::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileNotify::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileNotify)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
   }
 
   // string file_name = 3;
@@ -2460,7 +2605,7 @@ failure:
   // uint32 file_size = 4;
   if (this->_internal_file_size() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_file_size(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_file_size(), target);
   }
 
   // string task_id = 5;
@@ -2474,24 +2619,24 @@ failure:
   }
 
   // repeated .IM.BaseDefine.IpAddr ip_addr_list = 6;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_ip_addr_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_ip_addr_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_ip_addr_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_ip_addr_list(i), target, stream);
+        InternalWriteMessage(6, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // .IM.BaseDefine.FileType trans_mode = 7;
   if (this->_internal_trans_mode() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       7, this->_internal_trans_mode(), target);
   }
 
   // uint32 offline_ready = 8;
   if (this->_internal_offline_ready() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->_internal_offline_ready(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(8, this->_internal_offline_ready(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2506,13 +2651,13 @@ size_t IMFileNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileNotify)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .IM.BaseDefine.IpAddr ip_addr_list = 6;
   total_size += 1UL * this->_internal_ip_addr_list_size();
-  for (const auto& msg : this->ip_addr_list_) {
+  for (const auto& msg : this->_impl_.ip_addr_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -2533,73 +2678,74 @@ size_t IMFileNotify::ByteSizeLong() const {
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
   }
 
   // uint32 file_size = 4;
   if (this->_internal_file_size() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_file_size());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_file_size());
   }
 
   // .IM.BaseDefine.FileType trans_mode = 7;
   if (this->_internal_trans_mode() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_trans_mode());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_trans_mode());
   }
 
   // uint32 offline_ready = 8;
   if (this->_internal_offline_ready() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_offline_ready());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_offline_ready());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileNotify::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileNotify*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileNotify*>(
       &from));
 }
 
 void IMFileNotify::MergeFrom(const IMFileNotify& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileNotify)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileNotify* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileNotify)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  ip_addr_list_.MergeFrom(from.ip_addr_list_);
+  _this->_impl_.ip_addr_list_.MergeFrom(from._impl_.ip_addr_list_);
   if (!from._internal_file_name().empty()) {
-    _internal_set_file_name(from._internal_file_name());
+    _this->_internal_set_file_name(from._internal_file_name());
   }
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_from_user_id() != 0) {
-    _internal_set_from_user_id(from._internal_from_user_id());
+    _this->_internal_set_from_user_id(from._internal_from_user_id());
   }
   if (from._internal_to_user_id() != 0) {
-    _internal_set_to_user_id(from._internal_to_user_id());
+    _this->_internal_set_to_user_id(from._internal_to_user_id());
   }
   if (from._internal_file_size() != 0) {
-    _internal_set_file_size(from._internal_file_size());
+    _this->_internal_set_file_size(from._internal_file_size());
   }
   if (from._internal_trans_mode() != 0) {
-    _internal_set_trans_mode(from._internal_trans_mode());
+    _this->_internal_set_trans_mode(from._internal_trans_mode());
   }
   if (from._internal_offline_ready() != 0) {
-    _internal_set_offline_ready(from._internal_offline_ready());
+    _this->_internal_set_offline_ready(from._internal_offline_ready());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileNotify::CopyFrom(const IMFileNotify& from) {
@@ -2618,23 +2764,21 @@ void IMFileNotify::InternalSwap(IMFileNotify* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ip_addr_list_.InternalSwap(&other->ip_addr_list_);
+  _impl_.ip_addr_list_.InternalSwap(&other->_impl_.ip_addr_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &file_name_, lhs_arena,
-      &other->file_name_, rhs_arena
+      &_impl_.file_name_, lhs_arena,
+      &other->_impl_.file_name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileNotify, offline_ready_)
-      + sizeof(IMFileNotify::offline_ready_)
-      - PROTOBUF_FIELD_OFFSET(IMFileNotify, from_user_id_)>(
-          reinterpret_cast<char*>(&from_user_id_),
-          reinterpret_cast<char*>(&other->from_user_id_));
+      PROTOBUF_FIELD_OFFSET(IMFileNotify, _impl_.offline_ready_)
+      + sizeof(IMFileNotify::_impl_.offline_ready_)
+      - PROTOBUF_FIELD_OFFSET(IMFileNotify, _impl_.from_user_id_)>(
+          reinterpret_cast<char*>(&_impl_.from_user_id_),
+          reinterpret_cast<char*>(&other->_impl_.from_user_id_));
 }
 
 std::string IMFileNotify::GetTypeName() const {
@@ -2646,7 +2790,7 @@ std::string IMFileNotify::GetTypeName() const {
 
 class IMFileHasOfflineReq::_Internal {
  public:
-  using HasBits = decltype(std::declval<IMFileHasOfflineReq>()._has_bits_);
+  using HasBits = decltype(std::declval<IMFileHasOfflineReq>()._impl_._has_bits_);
   static void set_has_attach_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2655,87 +2799,100 @@ class IMFileHasOfflineReq::_Internal {
 IMFileHasOfflineReq::IMFileHasOfflineReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileHasOfflineReq)
 }
 IMFileHasOfflineReq::IMFileHasOfflineReq(const IMFileHasOfflineReq& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileHasOfflineReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.user_id_){}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_attach_data()) {
-    attach_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_attach_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.attach_data_.Set(from._internal_attach_data(), 
+      _this->GetArenaForAllocation());
   }
-  user_id_ = from.user_id_;
+  _this->_impl_.user_id_ = from._impl_.user_id_;
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileHasOfflineReq)
 }
 
-void IMFileHasOfflineReq::SharedCtor() {
-attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-user_id_ = 0u;
+inline void IMFileHasOfflineReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.user_id_){0u}
+  };
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileHasOfflineReq::~IMFileHasOfflineReq() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileHasOfflineReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileHasOfflineReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  attach_data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.Destroy();
 }
 
-void IMFileHasOfflineReq::ArenaDtor(void* object) {
-  IMFileHasOfflineReq* _this = reinterpret_cast< IMFileHasOfflineReq* >(object);
-  (void)_this;
-}
-void IMFileHasOfflineReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileHasOfflineReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileHasOfflineReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileHasOfflineReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    attach_data_.ClearNonDefaultToEmpty();
+    _impl_.attach_data_.ClearNonDefaultToEmpty();
   }
-  user_id_ = 0u;
-  _has_bits_.Clear();
+  _impl_.user_id_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileHasOfflineReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileHasOfflineReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // optional bytes attach_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_attach_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -2756,7 +2913,7 @@ const char* IMFileHasOfflineReq::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     CHK_(ptr != nullptr);
   }  // while
 message_done:
-  _has_bits_.Or(has_bits);
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -2764,16 +2921,16 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileHasOfflineReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileHasOfflineReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileHasOfflineReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 user_id = 1;
   if (this->_internal_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_user_id(), target);
   }
 
   // optional bytes attach_data = 20;
@@ -2794,12 +2951,12 @@ size_t IMFileHasOfflineReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileHasOfflineReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional bytes attach_data = 20;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -2808,36 +2965,37 @@ size_t IMFileHasOfflineReq::ByteSizeLong() const {
 
   // uint32 user_id = 1;
   if (this->_internal_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileHasOfflineReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileHasOfflineReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileHasOfflineReq*>(
       &from));
 }
 
 void IMFileHasOfflineReq::MergeFrom(const IMFileHasOfflineReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileHasOfflineReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileHasOfflineReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileHasOfflineReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_attach_data()) {
-    _internal_set_attach_data(from._internal_attach_data());
+    _this->_internal_set_attach_data(from._internal_attach_data());
   }
   if (from._internal_user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
+    _this->_internal_set_user_id(from._internal_user_id());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileHasOfflineReq::CopyFrom(const IMFileHasOfflineReq& from) {
@@ -2856,13 +3014,12 @@ void IMFileHasOfflineReq::InternalSwap(IMFileHasOfflineReq* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &attach_data_, lhs_arena,
-      &other->attach_data_, rhs_arena
+      &_impl_.attach_data_, lhs_arena,
+      &other->_impl_.attach_data_, rhs_arena
   );
-  swap(user_id_, other->user_id_);
+  swap(_impl_.user_id_, other->_impl_.user_id_);
 }
 
 std::string IMFileHasOfflineReq::GetTypeName() const {
@@ -2874,106 +3031,121 @@ std::string IMFileHasOfflineReq::GetTypeName() const {
 
 class IMFileHasOfflineRsp::_Internal {
  public:
-  using HasBits = decltype(std::declval<IMFileHasOfflineRsp>()._has_bits_);
+  using HasBits = decltype(std::declval<IMFileHasOfflineRsp>()._impl_._has_bits_);
   static void set_has_attach_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
 };
 
 void IMFileHasOfflineRsp::clear_offline_file_list() {
-  offline_file_list_.Clear();
+  _impl_.offline_file_list_.Clear();
 }
 void IMFileHasOfflineRsp::clear_ip_addr_list() {
-  ip_addr_list_.Clear();
+  _impl_.ip_addr_list_.Clear();
 }
 IMFileHasOfflineRsp::IMFileHasOfflineRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned),
-  offline_file_list_(arena),
-  ip_addr_list_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileHasOfflineRsp)
 }
 IMFileHasOfflineRsp::IMFileHasOfflineRsp(const IMFileHasOfflineRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(),
-      _has_bits_(from._has_bits_),
-      offline_file_list_(from.offline_file_list_),
-      ip_addr_list_(from.ip_addr_list_) {
+  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileHasOfflineRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.offline_file_list_){from._impl_.offline_file_list_}
+    , decltype(_impl_.ip_addr_list_){from._impl_.ip_addr_list_}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.user_id_){}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_attach_data()) {
-    attach_data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_attach_data(), 
-      GetArenaForAllocation());
+    _this->_impl_.attach_data_.Set(from._internal_attach_data(), 
+      _this->GetArenaForAllocation());
   }
-  user_id_ = from.user_id_;
+  _this->_impl_.user_id_ = from._impl_.user_id_;
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileHasOfflineRsp)
 }
 
-void IMFileHasOfflineRsp::SharedCtor() {
-attach_data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-user_id_ = 0u;
+inline void IMFileHasOfflineRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.offline_file_list_){arena}
+    , decltype(_impl_.ip_addr_list_){arena}
+    , decltype(_impl_.attach_data_){}
+    , decltype(_impl_.user_id_){0u}
+  };
+  _impl_.attach_data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.attach_data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileHasOfflineRsp::~IMFileHasOfflineRsp() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileHasOfflineRsp)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileHasOfflineRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  attach_data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.offline_file_list_.~RepeatedPtrField();
+  _impl_.ip_addr_list_.~RepeatedPtrField();
+  _impl_.attach_data_.Destroy();
 }
 
-void IMFileHasOfflineRsp::ArenaDtor(void* object) {
-  IMFileHasOfflineRsp* _this = reinterpret_cast< IMFileHasOfflineRsp* >(object);
-  (void)_this;
-}
-void IMFileHasOfflineRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileHasOfflineRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileHasOfflineRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileHasOfflineRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  offline_file_list_.Clear();
-  ip_addr_list_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.offline_file_list_.Clear();
+  _impl_.ip_addr_list_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    attach_data_.ClearNonDefaultToEmpty();
+    _impl_.attach_data_.ClearNonDefaultToEmpty();
   }
-  user_id_ = 0u;
-  _has_bits_.Clear();
+  _impl_.user_id_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileHasOfflineRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileHasOfflineRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // repeated .IM.BaseDefine.OfflineFileInfo offline_file_list = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2986,7 +3158,7 @@ const char* IMFileHasOfflineRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAME
         continue;
       // repeated .IM.BaseDefine.IpAddr ip_addr_list = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2999,9 +3171,9 @@ const char* IMFileHasOfflineRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAME
         continue;
       // optional bytes attach_data = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           auto str = _internal_mutable_attach_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -3022,7 +3194,7 @@ const char* IMFileHasOfflineRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     CHK_(ptr != nullptr);
   }  // while
 message_done:
-  _has_bits_.Or(has_bits);
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
@@ -3030,32 +3202,32 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileHasOfflineRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileHasOfflineRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileHasOfflineRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 user_id = 1;
   if (this->_internal_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_user_id(), target);
   }
 
   // repeated .IM.BaseDefine.OfflineFileInfo offline_file_list = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_offline_file_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_offline_file_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_offline_file_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_offline_file_list(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .IM.BaseDefine.IpAddr ip_addr_list = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_ip_addr_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_ip_addr_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_ip_addr_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_ip_addr_list(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bytes attach_data = 20;
@@ -3076,26 +3248,26 @@ size_t IMFileHasOfflineRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileHasOfflineRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .IM.BaseDefine.OfflineFileInfo offline_file_list = 2;
   total_size += 1UL * this->_internal_offline_file_list_size();
-  for (const auto& msg : this->offline_file_list_) {
+  for (const auto& msg : this->_impl_.offline_file_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .IM.BaseDefine.IpAddr ip_addr_list = 3;
   total_size += 1UL * this->_internal_ip_addr_list_size();
-  for (const auto& msg : this->ip_addr_list_) {
+  for (const auto& msg : this->_impl_.ip_addr_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // optional bytes attach_data = 20;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -3104,38 +3276,39 @@ size_t IMFileHasOfflineRsp::ByteSizeLong() const {
 
   // uint32 user_id = 1;
   if (this->_internal_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_user_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileHasOfflineRsp::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileHasOfflineRsp*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileHasOfflineRsp*>(
       &from));
 }
 
 void IMFileHasOfflineRsp::MergeFrom(const IMFileHasOfflineRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileHasOfflineRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileHasOfflineRsp* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileHasOfflineRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  offline_file_list_.MergeFrom(from.offline_file_list_);
-  ip_addr_list_.MergeFrom(from.ip_addr_list_);
+  _this->_impl_.offline_file_list_.MergeFrom(from._impl_.offline_file_list_);
+  _this->_impl_.ip_addr_list_.MergeFrom(from._impl_.ip_addr_list_);
   if (from._internal_has_attach_data()) {
-    _internal_set_attach_data(from._internal_attach_data());
+    _this->_internal_set_attach_data(from._internal_attach_data());
   }
   if (from._internal_user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
+    _this->_internal_set_user_id(from._internal_user_id());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileHasOfflineRsp::CopyFrom(const IMFileHasOfflineRsp& from) {
@@ -3154,15 +3327,14 @@ void IMFileHasOfflineRsp::InternalSwap(IMFileHasOfflineRsp* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  offline_file_list_.InternalSwap(&other->offline_file_list_);
-  ip_addr_list_.InternalSwap(&other->ip_addr_list_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.offline_file_list_.InternalSwap(&other->_impl_.offline_file_list_);
+  _impl_.ip_addr_list_.InternalSwap(&other->_impl_.ip_addr_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &attach_data_, lhs_arena,
-      &other->attach_data_, rhs_arena
+      &_impl_.attach_data_, lhs_arena,
+      &other->_impl_.attach_data_, rhs_arena
   );
-  swap(user_id_, other->user_id_);
+  swap(_impl_.user_id_, other->_impl_.user_id_);
 }
 
 std::string IMFileHasOfflineRsp::GetTypeName() const {
@@ -3179,123 +3351,144 @@ class IMFileAddOfflineReq::_Internal {
 IMFileAddOfflineReq::IMFileAddOfflineReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileAddOfflineReq)
 }
 IMFileAddOfflineReq::IMFileAddOfflineReq(const IMFileAddOfflineReq& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileAddOfflineReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.file_name_){}
+    , decltype(_impl_.from_user_id_){}
+    , decltype(_impl_.to_user_id_){}
+    , decltype(_impl_.file_size_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_file_name().empty()) {
-    file_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_file_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.file_name_.Set(from._internal_file_name(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&from_user_id_, &from.from_user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&file_size_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(file_size_));
+  ::memcpy(&_impl_.from_user_id_, &from._impl_.from_user_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.file_size_) -
+    reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.file_size_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileAddOfflineReq)
 }
 
-void IMFileAddOfflineReq::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-file_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&from_user_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&file_size_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(file_size_));
+inline void IMFileAddOfflineReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.file_name_){}
+    , decltype(_impl_.from_user_id_){0u}
+    , decltype(_impl_.to_user_id_){0u}
+    , decltype(_impl_.file_size_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.file_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.file_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileAddOfflineReq::~IMFileAddOfflineReq() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileAddOfflineReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileAddOfflineReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  file_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
+  _impl_.file_name_.Destroy();
 }
 
-void IMFileAddOfflineReq::ArenaDtor(void* object) {
-  IMFileAddOfflineReq* _this = reinterpret_cast< IMFileAddOfflineReq* >(object);
-  (void)_this;
-}
-void IMFileAddOfflineReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileAddOfflineReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileAddOfflineReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileAddOfflineReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  file_name_.ClearToEmpty();
-  ::memset(&from_user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&file_size_) -
-      reinterpret_cast<char*>(&from_user_id_)) + sizeof(file_size_));
+  _impl_.task_id_.ClearToEmpty();
+  _impl_.file_name_.ClearToEmpty();
+  ::memset(&_impl_.from_user_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.file_size_) -
+      reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.file_size_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileAddOfflineReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileAddOfflineReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 from_user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 to_user_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string task_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // string file_name = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_file_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
       // uint32 file_size = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          file_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          _impl_.file_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -3323,22 +3516,22 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileAddOfflineReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileAddOfflineReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileAddOfflineReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
   }
 
   // string task_id = 3;
@@ -3364,7 +3557,7 @@ failure:
   // uint32 file_size = 5;
   if (this->_internal_file_size() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_file_size(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_file_size(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3379,7 +3572,7 @@ size_t IMFileAddOfflineReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileAddOfflineReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -3399,55 +3592,56 @@ size_t IMFileAddOfflineReq::ByteSizeLong() const {
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
   }
 
   // uint32 file_size = 5;
   if (this->_internal_file_size() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_file_size());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_file_size());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileAddOfflineReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileAddOfflineReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileAddOfflineReq*>(
       &from));
 }
 
 void IMFileAddOfflineReq::MergeFrom(const IMFileAddOfflineReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileAddOfflineReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileAddOfflineReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileAddOfflineReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (!from._internal_file_name().empty()) {
-    _internal_set_file_name(from._internal_file_name());
+    _this->_internal_set_file_name(from._internal_file_name());
   }
   if (from._internal_from_user_id() != 0) {
-    _internal_set_from_user_id(from._internal_from_user_id());
+    _this->_internal_set_from_user_id(from._internal_from_user_id());
   }
   if (from._internal_to_user_id() != 0) {
-    _internal_set_to_user_id(from._internal_to_user_id());
+    _this->_internal_set_to_user_id(from._internal_to_user_id());
   }
   if (from._internal_file_size() != 0) {
-    _internal_set_file_size(from._internal_file_size());
+    _this->_internal_set_file_size(from._internal_file_size());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileAddOfflineReq::CopyFrom(const IMFileAddOfflineReq& from) {
@@ -3467,21 +3661,19 @@ void IMFileAddOfflineReq::InternalSwap(IMFileAddOfflineReq* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &file_name_, lhs_arena,
-      &other->file_name_, rhs_arena
+      &_impl_.file_name_, lhs_arena,
+      &other->_impl_.file_name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileAddOfflineReq, file_size_)
-      + sizeof(IMFileAddOfflineReq::file_size_)
-      - PROTOBUF_FIELD_OFFSET(IMFileAddOfflineReq, from_user_id_)>(
-          reinterpret_cast<char*>(&from_user_id_),
-          reinterpret_cast<char*>(&other->from_user_id_));
+      PROTOBUF_FIELD_OFFSET(IMFileAddOfflineReq, _impl_.file_size_)
+      + sizeof(IMFileAddOfflineReq::_impl_.file_size_)
+      - PROTOBUF_FIELD_OFFSET(IMFileAddOfflineReq, _impl_.from_user_id_)>(
+          reinterpret_cast<char*>(&_impl_.from_user_id_),
+          reinterpret_cast<char*>(&other->_impl_.from_user_id_));
 }
 
 std::string IMFileAddOfflineReq::GetTypeName() const {
@@ -3498,98 +3690,109 @@ class IMFileDelOfflineReq::_Internal {
 IMFileDelOfflineReq::IMFileDelOfflineReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:IM.File.IMFileDelOfflineReq)
 }
 IMFileDelOfflineReq::IMFileDelOfflineReq(const IMFileDelOfflineReq& from)
   : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
+  IMFileDelOfflineReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.from_user_id_){}
+    , decltype(_impl_.to_user_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
-  task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_task_id().empty()) {
-    task_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_task_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.task_id_.Set(from._internal_task_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&from_user_id_, &from.from_user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&to_user_id_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(to_user_id_));
+  ::memcpy(&_impl_.from_user_id_, &from._impl_.from_user_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.to_user_id_) -
+    reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.to_user_id_));
   // @@protoc_insertion_point(copy_constructor:IM.File.IMFileDelOfflineReq)
 }
 
-void IMFileDelOfflineReq::SharedCtor() {
-task_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&from_user_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&to_user_id_) -
-    reinterpret_cast<char*>(&from_user_id_)) + sizeof(to_user_id_));
+inline void IMFileDelOfflineReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.task_id_){}
+    , decltype(_impl_.from_user_id_){0u}
+    , decltype(_impl_.to_user_id_){0u}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.task_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.task_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 IMFileDelOfflineReq::~IMFileDelOfflineReq() {
   // @@protoc_insertion_point(destructor:IM.File.IMFileDelOfflineReq)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<std::string>();
 }
 
 inline void IMFileDelOfflineReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  task_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.task_id_.Destroy();
 }
 
-void IMFileDelOfflineReq::ArenaDtor(void* object) {
-  IMFileDelOfflineReq* _this = reinterpret_cast< IMFileDelOfflineReq* >(object);
-  (void)_this;
-}
-void IMFileDelOfflineReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void IMFileDelOfflineReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void IMFileDelOfflineReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:IM.File.IMFileDelOfflineReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  task_id_.ClearToEmpty();
-  ::memset(&from_user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&to_user_id_) -
-      reinterpret_cast<char*>(&from_user_id_)) + sizeof(to_user_id_));
+  _impl_.task_id_.ClearToEmpty();
+  ::memset(&_impl_.from_user_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.to_user_id_) -
+      reinterpret_cast<char*>(&_impl_.from_user_id_)) + sizeof(_impl_.to_user_id_));
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* IMFileDelOfflineReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* IMFileDelOfflineReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // uint32 from_user_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.from_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // uint32 to_user_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.to_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // string task_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_task_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, nullptr));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, nullptr));
         } else
           goto handle_unusual;
         continue;
@@ -3616,22 +3819,22 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IMFileDelOfflineReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* IMFileDelOfflineReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:IM.File.IMFileDelOfflineReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_from_user_id(), target);
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_to_user_id(), target);
   }
 
   // string task_id = 3;
@@ -3656,7 +3859,7 @@ size_t IMFileDelOfflineReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:IM.File.IMFileDelOfflineReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -3669,44 +3872,45 @@ size_t IMFileDelOfflineReq::ByteSizeLong() const {
 
   // uint32 from_user_id = 1;
   if (this->_internal_from_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_from_user_id());
   }
 
   // uint32 to_user_id = 2;
   if (this->_internal_to_user_id() != 0) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_to_user_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
 void IMFileDelOfflineReq::CheckTypeAndMergeFrom(
     const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
-  MergeFrom(*::PROTOBUF_NAMESPACE_ID::internal::DownCast<const IMFileDelOfflineReq*>(
+  MergeFrom(*::_pbi::DownCast<const IMFileDelOfflineReq*>(
       &from));
 }
 
 void IMFileDelOfflineReq::MergeFrom(const IMFileDelOfflineReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileDelOfflineReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  IMFileDelOfflineReq* const _this = this;
+  // @@protoc_insertion_point(class_specific_merge_from_start:IM.File.IMFileDelOfflineReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_task_id().empty()) {
-    _internal_set_task_id(from._internal_task_id());
+    _this->_internal_set_task_id(from._internal_task_id());
   }
   if (from._internal_from_user_id() != 0) {
-    _internal_set_from_user_id(from._internal_from_user_id());
+    _this->_internal_set_from_user_id(from._internal_from_user_id());
   }
   if (from._internal_to_user_id() != 0) {
-    _internal_set_to_user_id(from._internal_to_user_id());
+    _this->_internal_set_to_user_id(from._internal_to_user_id());
   }
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
 }
 
 void IMFileDelOfflineReq::CopyFrom(const IMFileDelOfflineReq& from) {
@@ -3726,16 +3930,15 @@ void IMFileDelOfflineReq::InternalSwap(IMFileDelOfflineReq* other) {
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &task_id_, lhs_arena,
-      &other->task_id_, rhs_arena
+      &_impl_.task_id_, lhs_arena,
+      &other->_impl_.task_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(IMFileDelOfflineReq, to_user_id_)
-      + sizeof(IMFileDelOfflineReq::to_user_id_)
-      - PROTOBUF_FIELD_OFFSET(IMFileDelOfflineReq, from_user_id_)>(
-          reinterpret_cast<char*>(&from_user_id_),
-          reinterpret_cast<char*>(&other->from_user_id_));
+      PROTOBUF_FIELD_OFFSET(IMFileDelOfflineReq, _impl_.to_user_id_)
+      + sizeof(IMFileDelOfflineReq::_impl_.to_user_id_)
+      - PROTOBUF_FIELD_OFFSET(IMFileDelOfflineReq, _impl_.from_user_id_)>(
+          reinterpret_cast<char*>(&_impl_.from_user_id_),
+          reinterpret_cast<char*>(&other->_impl_.from_user_id_));
 }
 
 std::string IMFileDelOfflineReq::GetTypeName() const {
@@ -3747,40 +3950,52 @@ std::string IMFileDelOfflineReq::GetTypeName() const {
 }  // namespace File
 }  // namespace IM
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileLoginReq* Arena::CreateMaybeMessage< ::IM::File::IMFileLoginReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileLoginReq*
+Arena::CreateMaybeMessage< ::IM::File::IMFileLoginReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileLoginReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileLoginRsp* Arena::CreateMaybeMessage< ::IM::File::IMFileLoginRsp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileLoginRsp*
+Arena::CreateMaybeMessage< ::IM::File::IMFileLoginRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileLoginRsp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileState* Arena::CreateMaybeMessage< ::IM::File::IMFileState >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileState*
+Arena::CreateMaybeMessage< ::IM::File::IMFileState >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileState >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFilePullDataReq* Arena::CreateMaybeMessage< ::IM::File::IMFilePullDataReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFilePullDataReq*
+Arena::CreateMaybeMessage< ::IM::File::IMFilePullDataReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFilePullDataReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFilePullDataRsp* Arena::CreateMaybeMessage< ::IM::File::IMFilePullDataRsp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFilePullDataRsp*
+Arena::CreateMaybeMessage< ::IM::File::IMFilePullDataRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFilePullDataRsp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileReq* Arena::CreateMaybeMessage< ::IM::File::IMFileReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileReq*
+Arena::CreateMaybeMessage< ::IM::File::IMFileReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileRsp* Arena::CreateMaybeMessage< ::IM::File::IMFileRsp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileRsp*
+Arena::CreateMaybeMessage< ::IM::File::IMFileRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileRsp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileNotify* Arena::CreateMaybeMessage< ::IM::File::IMFileNotify >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileNotify*
+Arena::CreateMaybeMessage< ::IM::File::IMFileNotify >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileNotify >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileHasOfflineReq* Arena::CreateMaybeMessage< ::IM::File::IMFileHasOfflineReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileHasOfflineReq*
+Arena::CreateMaybeMessage< ::IM::File::IMFileHasOfflineReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileHasOfflineReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileHasOfflineRsp* Arena::CreateMaybeMessage< ::IM::File::IMFileHasOfflineRsp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileHasOfflineRsp*
+Arena::CreateMaybeMessage< ::IM::File::IMFileHasOfflineRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileHasOfflineRsp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileAddOfflineReq* Arena::CreateMaybeMessage< ::IM::File::IMFileAddOfflineReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileAddOfflineReq*
+Arena::CreateMaybeMessage< ::IM::File::IMFileAddOfflineReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileAddOfflineReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::IM::File::IMFileDelOfflineReq* Arena::CreateMaybeMessage< ::IM::File::IMFileDelOfflineReq >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::IM::File::IMFileDelOfflineReq*
+Arena::CreateMaybeMessage< ::IM::File::IMFileDelOfflineReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::IM::File::IMFileDelOfflineReq >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
