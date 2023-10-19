@@ -364,6 +364,8 @@ services:
     networks:
       teamtalk:
         ipv4_address: 6.1.0.8
+    ports:
+      - 9306:3306
     environment:
       TZ: Europe/Rome #Asia/Shanghai 时区
       MARIADB_ROOT_PASSWORD: admin123@

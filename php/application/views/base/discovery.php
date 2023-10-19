@@ -71,7 +71,7 @@
                     },
                     overlayClick: false,
                     width: 660,
-                    title: '添加用户',
+                    title: '添加',
                     contents: Discovery.compiledAddTpl.render()
                 }).showModal();
             },
@@ -121,7 +121,7 @@
                     },
                     overlayClick: false,
                     width: 660,
-                    title: '编辑用户',
+                    title: '编辑',
                     contents: Discovery.compiledAddTpl.render()
                 }).showModal();
                 $.post('/discovery/get', {

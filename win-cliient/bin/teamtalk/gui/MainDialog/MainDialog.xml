@@ -42,7 +42,7 @@
 			<Control height="1" bkcolor="#FFD1DCE1"/>		
             <HorizontalLayout name="tabbtns" height="35"  inset="0,0,0,0" bkcolor="#FFF7F7F7">
 				<Option name="RecentlyListbtn" tooltip="最近联系人" width="92" height="35"  selected="true" group="true" normalimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;0,0,92,35&apos;" selectedimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;0,36,92,71&apos;"/>
-                <Option name="friendbtn" tooltip="组织架构" width="93" height="35"  group="true"  normalimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;93,0,186,35&apos;" selectedimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;93,36,186,71&apos;" />
+                <Option name="friendbtn" tooltip="部门管理" width="93" height="35"  group="true"  normalimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;93,0,186,35&apos;" selectedimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;93,36,186,71&apos;" />
                 <Option name="groupbtn" tooltip="群/讨论组" width="92" height="35" group="true"  normalimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;187,0,280,35&apos;" selectedimage="file=&apos;MainDialog/tab_btn.png&apos; source=&apos;187,36,280,71&apos;"  />
             </HorizontalLayout>
 			<ListLayout >			

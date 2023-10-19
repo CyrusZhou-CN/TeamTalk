@@ -140,9 +140,9 @@ typedef void(^InsertsRecentContactsCOmplection)(NSError* error);
  */
 - (void)insertUsers:(NSArray*)users completion:(InsertsRecentContactsCOmplection)completion;
 /**
- *  插入组织架构信息
+ *  插入部门管理信息
  *
- *  @param departments 组织架构数组
+ *  @param departments 部门管理数组
  *  @param completion  完成插入
  */
 - (void)insertDepartments:(NSArray*)departments completion:(InsertsRecentContactsCOmplection)completion;

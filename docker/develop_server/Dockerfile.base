@@ -1,16 +1,21 @@
-FROM openeuler/openeuler:20.03
+FROM lsqtzj/openeuler:23.09
 WORKDIR /develop
 
 RUN yum update -y
 RUN yum -y install cmake libuuid-devel openssl-devel apr-devel apr-util-devel \
     curl-devel mariadb-devel mariadb-common openssl-devel wget tar gdb.x86_64\
-    make gcc gcc-c++ flex diffutils expat-devel autoconf automake libtool libnsl
-
+    make gcc gcc-c++ flex diffutils expat-devel autoconf automake libtool libnsl 
+RUN yum groupinstall "Development Tools" -y
 #RUN wget https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-8.5.0.tar.gz
 COPY docker/develop_server/gcc-8.5.0.tar.gz ./
 RUN tar -xf gcc-8.5.0.tar.gz
-RUN cd gcc-releases-gcc-8.5.0 && ./contrib/download_prerequisites 
-RUN cd gcc-releases-gcc-8.5.0 && ./configure --prefix=/usr -enable-checking=release -enable-languages=c,c++ -disable-multilib && make -j4 && make install
+
+RUN cd gcc-releases-gcc-8.5.0 && sed -i 's/ftp:\/\/gcc.gnu.org/http:\/\/gcc.gnu.org/g' ./contrib/download_prerequisites &&\
+    chmod +x  ./contrib/download_prerequisites &&\
+    ./contrib/download_prerequisites
+# 删除 #include <linux/fs.h> 以解决 fsconfig_command/mount_attr 与 glibc 2.36 的冲突
+COPY docker/develop_server/sanitizer_platform_limits_posix.cc /develop/gcc-releases-gcc-8.5.0/libsanitizer/sanitizer_common/sanitizer_platform_limits_posix.cc
+RUN cd gcc-releases-gcc-8.5.0 && mkdir build64 && cd build64 && ../configure --prefix=/usr -enable-checking=release -enable-languages=c,c++ -disable-multilib && make -j4 && make install
 
 #RUN wget https://sourceforge.net/projects/mcrypt/files/Libmcrypt/2.5.8/libmcrypt-2.5.8.tar.gz
 COPY docker/develop_server/libmcrypt-2.5.8.tar.gz ./
@@ -37,6 +42,17 @@ RUN cd mhash-0.9.9.9 &&\
     ./configure &&\
     make -j 2 && make install
 
+#RUN cd server/src && ./make_hiredis.sh
+COPY docker/develop_server/hiredis-1.2.0.tar.gz ./hiredis/
+RUN cd ./hiredis &&\
+#   wget https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz -O hiredis-1.2.0.tar.gz &&\
+    tar -xf hiredis-1.2.0.tar.gz &&\
+    cd hiredis-1.2.0 &&\
+    make && \
+    mkdir -p /usr/local/hiredis &&\
+    /bin/cp -a hiredis.h alloc.h async.h read.h sds.h adapters libhiredis.a /usr/local/hiredis/
+
+
 COPY server/src/log4cxx log4cxx
 # 编译依赖项
 #RUN cd server/src && ./make_log4cxx.sh
@@ -61,15 +77,6 @@ RUN cd protobuf &&\
     sh autogen.sh &&\
     ./configure --prefix=/usr/local/protobuf &&\
     make -j4 && make install
-
-#RUN cd server/src && ./make_hiredis.sh
-COPY docker/develop_server/hiredis-master.zip ./hiredis/
-RUN cd ./hiredis &&\
-    unzip hiredis-master.zip &&\
-    cd hiredis-master &&\
-    make && \
-    mkdir -p /usr/local/hiredis &&\
-    /bin/cp -a hiredis.h async.h read.h sds.h adapters libhiredis.a /usr/local/hiredis/
 
 # # 删除临时文件
 RUN rm -Rf /develop

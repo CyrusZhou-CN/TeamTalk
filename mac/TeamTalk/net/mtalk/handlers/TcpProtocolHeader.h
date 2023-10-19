@@ -95,8 +95,8 @@ enum
     CMD_FRI_LIST_STATE_RES          = 0x020b,               //批量返回用户在线状态
     CMD_FRI_LIST_DETAIL_INFO_REQ    = 0x0204,               //批量获取用户详细资料
     CMD_FRI_LIST_DETAIL_INFO_RES    = 0x0205,               //批量放回用户详细资料
-    CMD_FRI_LIST_DEPARTMENT_REQ     = 0x0210,           //获取组织架构
-    CMD_FRI_LIST_DEPARTMENT_RES     = 0x0211,           //获取组织架构返回
+    CMD_FRI_LIST_DEPARTMENT_REQ     = 0x0210,           //获取部门管理
+    CMD_FRI_LIST_DEPARTMENT_RES     = 0x0211,           //获取部门管理返回
     CMD_FRI_MODIFY_USER_AVATAR_REQ  = 20,               //修改用户头像
     CMD_FRI_MODIFY_USER_AVATAR_RES  = 21,                //修改用户头像返回
 };

@@ -28,7 +28,8 @@ CREATE TABLE `IMAdmin` (
   `status` tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '用户状态 0 :正常 1:删除 可扩展',
   `created` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间´',
   `updated` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间´',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `unique_uname` (`uname`)  -- 添加唯一性约束
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `IMAdmin` WRITE;
@@ -74,7 +75,7 @@ CREATE TABLE `IMDepart` (
   `created` int(11) unsigned NOT NULL COMMENT '创建时间',
   `updated` int(11) unsigned NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`),
-  KEY `idx_departName` (`departName`),
+  UNIQUE KEY `idx_departName` (`departName`),
   KEY `idx_priority_status` (`priority`,`status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
@@ -94,7 +95,7 @@ CREATE TABLE `IMDiscovery` (
   `created` int(11) unsigned NOT NULL COMMENT '创建时间',
   `updated` int(11) unsigned NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`),
-  KEY `idx_itemName` (`itemName`)
+  UNIQUE KEY `idx_itemName` (`itemName`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 
@@ -116,7 +117,7 @@ CREATE TABLE `IMGroup` (
   `updated` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
   `created` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`),
-  KEY `idx_name` (`name`(191)),
+  UNIQUE KEY `idx_name` (`name`(191)),
   KEY `idx_creator` (`creator`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='IM群信息';
 
@@ -550,7 +551,7 @@ CREATE TABLE `IMUser` (
   `updated` int(11) unsigned NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`),
   KEY `idx_domain` (`domain`),
-  KEY `idx_name` (`name`),
+  UNIQUE KEY `idx_name` (`name`),
   KEY `idx_phone` (`phone`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 

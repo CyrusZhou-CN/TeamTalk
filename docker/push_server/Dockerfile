@@ -1,6 +1,6 @@
-FROM openeuler/openeuler:20.03  AS base
+FROM lsqtzj/openeuler:23.09  AS base
 
-RUN yum -y install apr-devel apr-util-devel
+RUN yum -y install apr-devel apr-util-devel openssl
 
 WORKDIR /teamtalk
 EXPOSE 8500
@@ -9,6 +9,7 @@ FROM lsqtzj/teamtalk_develop_server AS builder
 
 FROM base AS  runtime
 COPY  --from=builder /develop/im-server-1.0.0/push_server /teamtalk/push_server
+COPY  --from=builder /develop/*.pem /teamtalk/push_server/
 COPY  --from=builder /develop/im-server-1.0.0/daeml  /teamtalk/daeml
 COPY ./server/run/monitor.sh  /teamtalk/push_server/monitor.sh
 COPY ./server/run/restart.sh  /teamtalk/restart.sh

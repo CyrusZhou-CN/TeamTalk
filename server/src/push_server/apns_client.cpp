@@ -125,6 +125,7 @@ BOOL CAPNSClient::_GetAPNSServerAddress()
     //gateway host
     if (S_GetHostByName(s_apn_servers[gateway_index].host, szIP) == 0)
     {
+        PUSH_SERVER_WARN("gateway host, %s.", s_apn_servers[gateway_index].host);
         m_strGatewayIP = szIP;
         m_nGatewayPort = s_apn_servers[gateway_index].port;
     }

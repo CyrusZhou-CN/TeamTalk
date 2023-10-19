@@ -1,4 +1,4 @@
-FROM openeuler/openeuler:20.03  AS base
+FROM lsqtzj/openeuler:23.09 AS base
 
 RUN yum -y install apr-devel apr-util-devel
 

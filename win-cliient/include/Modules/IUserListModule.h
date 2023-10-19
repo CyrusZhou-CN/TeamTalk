@@ -1,7 +1,7 @@
 ﻿/*******************************************************************************
  *  @file      IUserListModule.h 2014\8\6 15:25:06 $
  *  @author    快刀<kuaidao@mogujie.com>
- *  @brief     组织架构相关模块
+ *  @brief     部门管理相关模块
  ******************************************************************************/
 
 #ifndef IUSERLISTMODULE_FDBD79FF_2F63_4E0A_8265_A001E2EB5182_H__
@@ -23,7 +23,7 @@
 NAMESPACE_BEGIN(module)
 const std::string MODULE_USERLIST_PREFIX = "userlist";
 //KEYID
-const std::string KEY_USERLIST_UPDATE_DEPARTMENTLIST = MODULE_USERLIST_PREFIX + "DeparmentList"; 		//成功获取到组织架构信息
+const std::string KEY_USERLIST_UPDATE_DEPARTMENTLIST = MODULE_USERLIST_PREFIX + "DeparmentList"; 		//成功获取到部门管理信息
 const std::string KEY_USERLIST_UPDATE_RECENTLIST = MODULE_USERLIST_PREFIX + "RecentList";			//成功获取最近联系人
 const std::string KEY_USERLIST_UPDATE_NEWUSESADDED = MODULE_USERLIST_PREFIX + "NewuserAdded";			//新用户更新
 const std::string KEY_USERLIST_DOWNAVATAR_SUCC = MODULE_USERLIST_PREFIX + "DownavatarSucc";		//头像下载成功通知
@@ -88,7 +88,7 @@ typedef std::map<std::string, UserInfoEntity>    UserInfoEntityMap;
 typedef std::vector<std::string>			UserInfoEntityVec;
 
 /**
- * The class <code>组织架构相关模块</code> 
+ * The class <code>部门管理相关模块</code> 
  *
  */
 class MODULE_API IUserListModule : public module::ModuleBase

@@ -1,5 +1,6 @@
-FROM lsqtzj/openeuler_nginx  AS base
+FROM lsqtzj/openeuler_nginx:php5.6
 EXPOSE 80
+WORKDIR /opt
 RUN rm -Rf /www/wwwroot/default/*
 COPY ./php /www/wwwroot/default
 RUN chown -R www:www /www

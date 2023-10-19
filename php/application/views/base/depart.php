@@ -1,12 +1,12 @@
 <aside class="right-side">
     <section class="content-header">
         <h1>
-            组织架构管理
+            部门管理
             <small>欢迎来到TeamTalk</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
-            <li class="active">组织架构</li>
+            <li class="active">部门管理</li>
         </ol>
     </section>
     <section class="content">
@@ -27,124 +27,126 @@
     </section>
     <script>
         var Depart = {
-            compiledTpl : null,
-            compiledAddTpl : null,
-            getDepart : function(page){
-                $.getJSON('/depart/all', function(data) {
+            compiledTpl: null,
+            compiledAddTpl: null,
+            getDepart: function (page) {
+                $.getJSON('/depart/all', function (data) {
                     var pdeparts = [];
-                    for(i in data.departs){
-                        if(data.departs[i].parentId == 0){
+                    for (i in data.departs) {
+                        if (data.departs[i].parentId == 0) {
                             pdeparts.push(data.departs[i]);
                         }
                     }
-                    $("table").data('depart',data);
-                    $("table").data('pdepart',pdeparts);
+                    $("table").data('depart', data);
+                    $("table").data('pdepart', pdeparts);
                     Depart.tpl();
                     var _tpl = Depart.compiledTpl.render(data);
                     $("tbody").html(_tpl);
                 });
             },
-            delDepart : function(node){
-                $.post('/depart/del', {id: node.data('id')}, function(data) {
-                    if($.trim(data) == 'has departs'){
+            delDepart: function (node) {
+                $.post('/depart/del', { id: node.data('id') }, function (data) {
+                    if ($.trim(data) == 'has departs') {
                         $(".add_depart").before('<div class="alert alert-danger alert-dismissable"><i class="fa fa-check"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>当前部门还有子部门</div>')
-                        setTimeout(function(){
+                        setTimeout(function () {
                             $(".alert").remove();
-                        },3000);
+                        }, 3000);
                     }
-                    if($.trim(data) == 'has users'){
+                    if ($.trim(data) == 'has users') {
                         $(".add_depart").before('<div class="alert alert-danger alert-dismissable"><i class="fa fa-check"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>当前部门下有用户</div>')
-                        setTimeout(function(){
+                        setTimeout(function () {
                             $(".alert").remove();
-                        },3000);
+                        }, 3000);
                     }
-                    if($.trim(data) == 'success'){
+                    if ($.trim(data) == 'success') {
                         node.fadeOut();
                     }
                 });
             },
-            addDepartAlert : function(){
+            addDepartAlert: function () {
                 Depart.addTpl();
                 $.fn.SimpleModal({
                     btn_ok: '添加',
                     model: 'confirm',
-                    callback: function(node){
+                    title: '添加部门',
+                    callback: function (node) {
                         Depart.addDepart();
                     },
                     overlayClick: false,
                     width: 660,
                     departName: '添加部门',
-                    contents: Depart.compiledAddTpl.render({departs:$("table").data('pdepart')})
+                    contents: Depart.compiledAddTpl.render({ departs: $("table").data('pdepart') })
                 }).showModal();
             },
-            editDepartAlert : function(node){
+            editDepartAlert: function (node) {
                 Depart.addTpl();
                 $.fn.SimpleModal({
                     btn_ok: '编辑',
                     model: 'confirm',
-                    callback: function(node){
+                    title: '编辑部门',
+                    callback: function (node) {
                         Depart.editDepart();
                     },
                     overlayClick: false,
                     width: 660,
                     departName: '编辑用户',
-                    contents: Depart.compiledAddTpl.render({departs:$("table").data('pdepart')})
+                    contents: Depart.compiledAddTpl.render({ departs: $("table").data('pdepart') })
                 }).showModal();
                 $.post('/depart/get', {
-                    id:node.data('id')
-                }, function(data) {
+                    id: node.data('id')
+                }, function (data) {
                     var data = JSON.parse(data);
                     $(".departName").val(data.departName);
                     $(".priority").val(data.priority);
                     $(".parentId").val(data.parentId);
-                    if(data.parentId == 0){
-                        $(".parentId").attr("disabled","disabled");
-                    }else{
-                        $($(".parentId option")[0]).attr("disabled","disabled");
+                    if (data.parentId == 0) {
+                        $(".parentId").attr("disabled", "disabled");
+                    } else {
+                        $($(".parentId option")[0]).attr("disabled", "disabled");
                     }
                     $(".btn-margin").addClass("btn-margin-edit");
-                    $(".btn-margin-edit").data('id',node.data('id'));
+                    $(".btn-margin-edit").data('id', node.data('id'));
                 });
             },
-            editDepart : function(){
+            editDepart: function () {
                 $.post('/depart/edit', {
                     departName: $(".departName").val(),
                     priority: $(".priority").val(),
                     parentId: $(".parentId").val(),
-                    id:$(".btn-margin-edit").data('id')
-                }, function(data) {
-                    if($.trim(data) == 'success'){
+                    id: $(".btn-margin-edit").data('id')
+                }, function (data) {
+                    if ($.trim(data) == 'success') {
                         $.fn.hideModal();
                         $(".add_depart").before('<div class="alert alert-success alert-dismissable"><i class="fa fa-check"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>编辑成功</div>')
-                        setTimeout(function(){
+                        setTimeout(function () {
                             $(".alert").remove();
-                        },3000);
+                        }, 3000);
                         Depart.getDepart();
-                    }else{
+                    } else {
                         $(".btn-margin-edit").text('编辑失败');
                     }
                 });
             },
-            addDepart : function(){
+            addDepart: function () {
                 $.post('/depart/add', {
                     departName: $(".departName").val(),
                     priority: $(".priority").val(),
                     parentId: $(".parentId").val()
-                }, function(data) {
-                    if($.trim(data) == 'success'){
+                }, function (data) {
+                    if ($.trim(data) == 'success') {
                         $.fn.hideModal();
                         $(".add_depart").before('<div class="alert alert-success alert-dismissable"><i class="fa fa-check"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>添加成功</div>')
-                        setTimeout(function(){
+                        setTimeout(function () {
                             $(".alert").remove();
-                        },3000);
+                        }, 3000);
                         Depart.getDepart();
-                    }else{
+                    } else {
                         $(".btn-depart").text('添加失败');
                     }
                 });
             },
-            addTpl : function(){
-                var tpl =[
+            addTpl: function () {
+                var tpl = [
                     '<div class="add_depart_div" role="form">',
                     '   <input type="text" class="form-control input-sm departName" placeholder="部门名称">',
                     '   <input type="number" class="form-control input-sm priority" placeholder="部门优先级">',
@@ -158,8 +160,8 @@
                 ].join('\n');
                 Depart.compiledAddTpl = juicer(tpl);
             },
-            tpl : function(){
-                var tpl=[
+            tpl: function () {
+                var tpl = [
                     '{@each departs as depart}',
                     '   <tr data-id="${depart.id}">',
                     '       <td>${depart.id}</td>',
@@ -173,24 +175,25 @@
                 Depart.compiledTpl = juicer(tpl);
             }
         }
-        $(function(){
+        $(function () {
             Depart.getDepart();
 
-            $(".del_depart").live("click",function(){
+            $(".del_depart").live("click", function () {
                 Depart.delDepart($(this).parents('tr'));
             })
 
-            $(".add_depart").click(function(){
+            $(".add_depart").click(function () {
                 Depart.addDepartAlert();
             })
 
-            $(".edit_depart").live("click",function(){
+            $(".edit_depart").live("click", function () {
                 Depart.editDepartAlert($(this).parents('tr'));
             })
         })
     </script>
     <style>
-        .add_depart_div input,.add_depart_div select{
+        .add_depart_div input,
+        .add_depart_div select {
             width: 620px;
             margin-top: 20px;
         }

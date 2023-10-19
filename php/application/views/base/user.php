@@ -119,6 +119,7 @@
                         setTimeout(function(){
                             $(".alert").remove();
                         },3000);
+                        User.getUser();
                     }else{
                         $(".btn-margin").text('添加失败');
                     }

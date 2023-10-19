@@ -1,7 +1,7 @@
 #!/bin/bash
 
 server_ip(){
-        arp $1 | sed "s/.*(\([0-9]*\.[0-9]*\.[0-9]*\.[0-9]*\)).*/\1/g"
+        getent hosts $1  | awk '{print $1}'
 }
 
 sed -i "s/msfs=.*/msfs=http:\/\/$( server_ip "${MsfsServer}" )\//g" /teamtalk/login_server/loginserver.conf

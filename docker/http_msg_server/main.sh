@@ -1,6 +1,6 @@
 #!/bin/bash
 server_ip(){
-        arp $1 | sed "s/.*(\([0-9]*\.[0-9]*\.[0-9]*\.[0-9]*\)).*/\1/g"
+        getent hosts $1  | awk '{print $1}'
 }
 
 sed -i "s/DBServerIP1=.*/DBServerIP1=$( server_ip "${DBServerIP1}" )/g" /teamtalk/http_msg_server/httpmsgserver.conf

@@ -1,0 +1,1 @@
+docker build -t lsqtzj/openeuler_develop -f Dockerfile ../../
