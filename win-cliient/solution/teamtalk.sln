@@ -31,7 +31,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modules", "..\src\Modules\M
 		{A29131FE-41A5-4CD5-B6A7-A66A173F912B} = {A29131FE-41A5-4CD5-B6A7-A66A173F912B}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GifSmiley", "..\src\GifSmiley\GifSmiley2003.vcxproj", "{5877050B-504E-4DFF-A78C-759C95E0DD06}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GifSmiley", "..\src\GifSmiley\GifSmiley.vcxproj", "{5877050B-504E-4DFF-A78C-759C95E0DD06}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "httpclient", "..\3rdParty\src\http\httpclient\httpclient.vcxproj", "{0C1A4D61-C72C-4BBC-8468-34CD700D860C}"
 EndProject
