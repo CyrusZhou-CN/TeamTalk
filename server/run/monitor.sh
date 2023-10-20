@@ -14,7 +14,7 @@ function sendSMS() {
     UserId="1"
 #子烨、蓝狐、罗宁
     Phone=("18806535140" "18657139120" "18668072662")
-    HostName=`hostname`
+    HostName=`uname -n`
     DirName=${PWD##*/}
     Content='[TeamTalk] '$HostName' '$DirName' crash 【蘑菇街】'
     CreateTime=`date +%s`000
@@ -38,23 +38,27 @@ function monitor() {
             echo -e "\033[32m $1 ==> START SUCCESSFUL ... \033[0m"
             while true
             do
-                pid=`cat server.pid`  # get pid
-                process_count=`ps aux|grep $1|grep $pid|wc -l`
-                if [ $process_count == 0 ]
-                then
-                    # send a SMS
-                    sendSMS
-                    # add log
-                    date >> restart.log
-                    echo "server stopped, pid=$pid, process_cnt=$process_count" >> restart.log
-                    # restart server
-                    if [ "$2" == "log" ]; then
-                        ./$1
-                    else
-                        ../daeml ./$1
-                    fi
+                if [ -e server.pid ]; then
+                    pid=`cat server.pid`  # get pid
+                    process_count=`ps aux|grep $1|grep $pid|wc -l`
+                    if [ $process_count == 0 ]
+                    then
+                        # send a SMS
+                        sendSMS
+                        # add log
+                        date >> restart.log
+                        echo "server stopped, pid=$pid, process_cnt=$process_count" >> restart.log
+                        # restart server
+                        if [ "$2" == "log" ]; then
+                            ./$1
+                        else
+                            ../daeml ./$1
+                        fi
+                    fi                    
+                    sleep 15
+                else
+                    break
                 fi
-                sleep 15
             done
         else          
             printf "%s %s\r" "$1=>Wait for start" "$dot"
