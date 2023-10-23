@@ -92,7 +92,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_HAS_STD_BYTE=0;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>.\;$(SolutionDir)..\include;$(SolutionDir)..\include\utility;$(SolutionDir)..\3rdParty\src\json\include\;$(SolutionDir)..\3rdParty\src;$(SolutionDir)..\3rdParty\include;$(SolutionDir)\..\..\;$(SolutionDir)\..\core;$(SolutionDir)\..\..\TTServer\cpp</AdditionalIncludeDirectories>
       <AdditionalOptions>/FS %(AdditionalOptions) </AdditionalOptions>

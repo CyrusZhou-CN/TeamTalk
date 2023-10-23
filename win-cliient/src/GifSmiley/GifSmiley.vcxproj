@@ -95,9 +95,9 @@
       <HeaderFileName>GifSmiley.h</HeaderFileName>
       <InterfaceIdentifierFileName>GifSmiley_i.c</InterfaceIdentifierFileName>
     </Midl>
-    <PostBuildEvent>
+    <!-- <PostBuildEvent>
       <Command>Regsvr32.exe /s "$(SolutionDir)..\bin\teamtalk\$(Configuration)\GifSmiley.dll"</Command>
-    </PostBuildEvent>
+    </PostBuildEvent> -->
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>

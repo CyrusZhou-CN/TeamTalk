@@ -101,7 +101,7 @@ void TcpClientModule_Impl::onReceiveData(const char* data, int32_t size)
 		m_pServerPingTimer->m_bHasReceivedPing = TRUE;
 
 	imcore::TTPBHeader header;
-	header.unSerialize((byte*)data, imcore::HEADER_LENGTH);	
+	header.unSerialize((byte_t*)data, imcore::HEADER_LENGTH);	
 	if (IM::BaseDefine::CID_OTHER_HEARTBEAT == header.getCommandId() && IM::BaseDefine::SID_OTHER == header.getModuleId())
 	{
 		//模块器端过来的心跳包，不跳到业务层派发
@@ -204,7 +204,7 @@ void TcpClientModule_Impl::_sendPacket(google::protobuf::MessageLite* pbBody)
 {
 	UInt32 length = imcore::HEADER_LENGTH + pbBody->ByteSizeLong();
 	m_TTPBHeader.setLength(length);
-	std::unique_ptr<byte> data(new byte[length]);
+	std::unique_ptr<byte_t> data(new byte_t[length]);
 	memset(data.get(), 0, length);
 	memcpy(data.get(), m_TTPBHeader.getSerializeBuffer(), imcore::HEADER_LENGTH);
 	if (!pbBody->SerializeToArray(data.get() + imcore::HEADER_LENGTH, pbBody->ByteSizeLong()))
@@ -245,7 +245,7 @@ void TcpClientModule_Impl::_handlePacketOperation(const char* data, UInt32 size)
 		[=]()
 	{
 		imcore::TTPBHeader header;
-		header.unSerialize((byte*)copyInBuffer.data(),imcore::HEADER_LENGTH);
+		header.unSerialize((byte_t*)copyInBuffer.data(),imcore::HEADER_LENGTH);
 
 		module::IPduPacketParse* pModule
 			= (module::IPduPacketParse*)__getModule(header.getModuleId());

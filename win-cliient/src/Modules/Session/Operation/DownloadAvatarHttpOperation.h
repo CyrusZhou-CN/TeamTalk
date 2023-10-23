@@ -1,18 +1,18 @@
 /*******************************************************************************
- *  @file      DownloadImgHttpOperation.h 2014\8\14 10:18:26 $
+ *  @file      DownloadAvatarHttpOperation.h 2014\8\14 10:18:26 $
  *  @author    ¿ìµ¶<kuaidao@mogujie.com>
  *  @brief     ÏÂÔØÍ¼Æ¬²Ù×÷
  ******************************************************************************/
 
-#ifndef DOWNLOADIMGHTTPOPERATION_4BB88F5E_5D0E_4FBA_9530_72972EB7647C_H__
-#define DOWNLOADIMGHTTPOPERATION_4BB88F5E_5D0E_4FBA_9530_72972EB7647C_H__
+#ifndef DownloadAvatarHttpOperation_4BB88F5E_5D0E_4FBA_9530_72972EB7647C_H__
+#define DownloadAvatarHttpOperation_4BB88F5E_5D0E_4FBA_9530_72972EB7647C_H__
 
 #include "Modules/IModuleInterface.h"
 #include "Modules/IHttpPoolModule.h"
 #include "Modules/IDatabaseModule.h"
 /******************************************************************************/
 
-const std::string AVATAR_FORMAT_48X48 = "_50x50";
+const std::string AVATAR_FORMAT_48X48 = "_48x48";
 const std::string AVATAR_FORMAT_64X64 = "_64x64";
 const std::string AVATAR_FORMAT_170X170 = "_170x170";
 
@@ -64,4 +64,4 @@ private:
 };
 
 /******************************************************************************/
-#endif// DOWNLOADIMGHTTPOPERATION_4BB88F5E_5D0E_4FBA_9530_72972EB7647C_H__
+#endif// DownloadAvatarHttpOperation_4BB88F5E_5D0E_4FBA_9530_72972EB7647C_H__

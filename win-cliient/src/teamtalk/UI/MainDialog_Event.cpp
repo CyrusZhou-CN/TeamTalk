@@ -54,9 +54,13 @@ void MainDialog::MKOForTcpClientModuleCallBack(const std::string& keyId, MKO_TUP
 		if (module::TCPCLIENT_STATE_DISCONNECT == module::getTcpClientModule()->getTcpClientNetState())
 		{
 			LOG__(ERR, _T("TCPCLIENT_STATE_DISCONNECT:TCP Client link broken!!!"));
-
+			module::UserInfoEntity myInfo;
+			module::getUserListModule()->getMyInfo(myInfo);
+			CString realName;
+			realName.Format(_T("(%s)"), myInfo.getRealName());
 			//ÍÐÅÌÇøÍ¼±ê»Ò¶Èµô
 			CString csTip = util::getMultilingual()->getStringById(_T("STRID_MAINDIALOG_TIP_DISCONNECT"));
+			csTip += realName;
 			SetTrayTooltipText(csTip);
 			UpdateLineStatus(IM::BaseDefine::UserStatType::USER_STATUS_OFFLINE);
 
@@ -77,12 +81,17 @@ void MainDialog::OnCopyData(IN COPYDATASTRUCT* pCopyData)
 }
 void MainDialog::MKOForLoginModuleCallBack(const std::string& keyId, MKO_TUPLE_PARAM mkoParam)
 {
+	module::UserInfoEntity myInfo;
+	module::getUserListModule()->getMyInfo(myInfo);
+	CString realName;
+	realName.Format(_T("(%s)"), myInfo.getRealName());
 	if (module::KEY_LOGIN_RELOGINOK == keyId)
 	{
 		CString sText = util::getMultilingual()->getStringById(_T("STRID_GLOBAL_CAPTION_NAME"));
 #ifdef _DEBUG
 		sText += _T("(Debug)");
-#endif
+#endif		
+		sText += realName;
 		SetTrayTooltipText(sText);
 		UpdateLineStatus(IM::BaseDefine::UserStatType::USER_STATUS_ONLINE);
 	}
@@ -96,7 +105,8 @@ void MainDialog::MKOForLoginModuleCallBack(const std::string& keyId, MKO_TUPLE_P
 		if (IM::BaseDefine::KickReasonType::KICK_REASON_MOBILE_KICK == nRes)
 		{
 			strText = util::getMultilingual()->getStringById(_T("STRID_LOGINDIALOG_TIP_MOBILE_KICK"));
-		}		
+		}
+		strText += realName;
 		CString strCaption = util::getMultilingual()->getStringById(_T("STRID_LOGINDIALOG_TIP_CAPTION"));
 		::MessageBoxEx(m_hWnd, strText, strCaption, MB_OK, LANG_CHINESE);
 	}

@@ -52,6 +52,7 @@ CControlUI* ServerConfigDialog::CreateControl(LPCTSTR pstrClass)
 
 void ServerConfigDialog::OnFinalMessage(HWND hWnd)
 {
+	module::getSysConfigModule()->setSysConfigDialogFlag(FALSE);
 	WindowImplBase::OnFinalMessage(hWnd);
 	delete this;
 }
@@ -86,10 +87,10 @@ DuiLib::CDuiString ServerConfigDialog::GetSkinFolder()
 
 void ServerConfigDialog::_InitlizeSetting()
 {
-	LOG__(ERR, _T("_InitlizeSetting,∂¡»°…Ë÷√ ß∞‹"));
 	module::TTConfig* pTTConfig = module::getSysConfigModule()->getSystemConfig();
 	if (!pTTConfig)
 	{
+		LOG__(ERR, _T("_InitlizeSetting,∂¡»°…Ë÷√ ß∞‹"));
 		return;
 	}
 

@@ -314,7 +314,7 @@ UINT CWindowWnd::ShowModal()
 void CWindowWnd::Close(UINT nRet)
 {
     ASSERT(::IsWindow(m_hWnd));
-    if( !::IsWindow(m_hWnd) ) return;
+    if (!::IsWindow(m_hWnd)) return;
     PostMessage(WM_CLOSE, (WPARAM)nRet, 0L);
 }
 

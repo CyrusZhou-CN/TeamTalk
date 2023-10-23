@@ -269,14 +269,13 @@ BOOL SysConfigModule_Impl::getImage(IN std::string sid, IN std::string url, IN B
 	}
 	else
 	{
-		////不存在则去服务器下载
-		//if (module::getSysConfigModule()->userID() == sid)
-		//{
-		//	format = "_60x60";
-		//}
-		//DownloadImgHttpOperation* pOper = new DownloadImgHttpOperation(sid, url, bGrayScale
-		//	, format, BIND_CALLBACK_1(callback));
-		//module::getHttpPoolModule()->pushHttpOperation(pOper);
+		//不存在则去服务器下载
+		if (module::getSysConfigModule()->userID() == sid)
+		{
+			format = AVATAR_FORMAT_64X64;
+		}
+		DownloadAvatarHttpOperation* pOper = new DownloadAvatarHttpOperation(sid, url,bGrayScale, format, callback);
+		module::getHttpPoolModule()->pushHttpOperation(pOper);
 	}
 	return FALSE;
 }

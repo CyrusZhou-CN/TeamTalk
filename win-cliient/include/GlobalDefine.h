@@ -25,7 +25,8 @@ typedef unsigned __int64				UInt64;
 typedef std::basic_string<char>         ByteBuffer;
 typedef std::string                     utf8String;
 typedef char                            utf8char;
-typedef unsigned char                   byte;
+
+typedef unsigned char                   byte_t;
 
 #define PTR_NULL(p)				{ assert(p); if (0 == p) { return 0; } }
 #define PTR_VOID(p)				{ assert(p); if (0 == p) { return; } }

@@ -1,5 +1,5 @@
 /******************************************************************************* 
- *  @file      DownloadImgHttpOperation.cpp 2014\8\14 10:19:07 $
+ *  @file      DownloadAvatarHttpOperation.cpp 2014\8\14 10:19:07 $
  *  @author    ¿ìµ¶<kuaidao@mogujie.com>
  *  @brief     
  ******************************************************************************/
@@ -16,7 +16,7 @@
 /******************************************************************************/
 
 // -----------------------------------------------------------------------------
-//  DownloadImgHttpOperation: Public, Constructor
+//  DownloadAvatarHttpOperation: Public, Constructor
 
 DownloadAvatarHttpOperation::DownloadAvatarHttpOperation(std::string sId, std::string& downUrl, BOOL bGrayScale
 	,const std::string format, module::IOperationDelegate callback)
@@ -30,7 +30,7 @@ DownloadAvatarHttpOperation::DownloadAvatarHttpOperation(std::string sId, std::s
 }
 
 // -----------------------------------------------------------------------------
-//  DownloadImgHttpOperation: Public, Destructor
+//  DownloadAvatarHttpOperation: Public, Destructor
 
 DownloadAvatarHttpOperation::~DownloadAvatarHttpOperation()
 {
@@ -59,7 +59,7 @@ void DownloadAvatarHttpOperation::processOpertion()
 	if (!client.execute(&request, &response))
 	{
 		CString csTemp = util::stringToCString(url, CP_UTF8);
-		LOG__(ERR, _T("DownloadImgHttpOperation failed %s"), csTemp);
+		LOG__(ERR, _T("DownloadAvatarHttpOperation failed %s"), csTemp);
 		client.killSelf();
 		return;
 	}

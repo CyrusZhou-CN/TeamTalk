@@ -196,7 +196,6 @@ BOOL CteamtalkApp::_IsHaveInstance()
 		MessageBox(0, _T("上次程序运行还没完全退出，请稍后再启动！"), _T("TeamTalk"), MB_OK);
 		return TRUE;
 	}
-
 	return FALSE;
 }
 

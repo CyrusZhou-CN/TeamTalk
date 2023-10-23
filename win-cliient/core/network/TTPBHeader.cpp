@@ -15,7 +15,7 @@ NAMESPACE_BEGIN(imcore)
 TTPBHeader::TTPBHeader()
 :m_pHeaderBuff(0)
 {
-	m_pHeaderBuff = new byte[HEADER_LENGTH];
+	m_pHeaderBuff = new byte_t[HEADER_LENGTH];
 }
 
 // -----------------------------------------------------------------------------
@@ -27,13 +27,13 @@ TTPBHeader::~TTPBHeader()
 	m_pHeaderBuff = 0;
 }
 
-byte* TTPBHeader::getSerializeBuffer()
+byte_t* TTPBHeader::getSerializeBuffer()
 {
 	_serialize();
 	return m_pHeaderBuff;
 }
 
-void TTPBHeader::unSerialize(byte* headerBuff,UInt16 len)
+void TTPBHeader::unSerialize(byte_t* headerBuff,UInt16 len)
 {
 	if (len != HEADER_LENGTH || 0 == headerBuff || 0 == m_pHeaderBuff)
 		return;

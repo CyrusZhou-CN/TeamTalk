@@ -40,7 +40,7 @@ public:
 		: count_(0)
 	{}
 
-	virtual ~ObserverImpl()	{}
+	virtual ~ObserverImpl() {}
 
 	virtual void AddReceiver(ReceiverImplBase<ReturnT, ParamT>* receiver)
 	{
@@ -70,12 +70,15 @@ public:
 
 	virtual ReturnT Broadcast(ParamT param)
 	{
-		ReceiversMap::iterator it = receivers_.begin();
-		for (; it != receivers_.end(); ++it)
+		if (!receivers_.empty())
 		{
-			if (it->second)
+			ReceiversMap::iterator it = receivers_.begin();
+			for (; it != receivers_.end(); ++it)
 			{
-				it->second->Receive(param);
+				if (it->second)
+				{
+					it->second->Receive(param);
+				}
 			}
 		}
 
@@ -84,12 +87,15 @@ public:
 
 	virtual ReturnT RBroadcast(ParamT param)//反序广播
 	{
-		ReceiversMap::reverse_iterator it = receivers_.rbegin();
-		for (; it != receivers_.rend(); ++it)
+		if (!receivers_.empty())
 		{
-			if (it->second)//大佛;需要判空
+			ReceiversMap::reverse_iterator it = receivers_.rbegin();
+			for (; it != receivers_.rend(); ++it)
 			{
-				it->second->Receive(param);
+				if (it->second)//大佛;需要判空
+				{
+					it->second->Receive(param);
+				}
 			}
 		}
 
@@ -97,10 +103,16 @@ public:
 	}
 	virtual ReturnT Notify(ParamT param)
 	{
-		ReceiversMap::iterator it = receivers_.begin();
-		for (; it != receivers_.end(); ++it)
+		if (!receivers_.empty())
 		{
-			it->second->Respond(param, this);
+			ReceiversMap::iterator it = receivers_.begin();
+			for (; it != receivers_.end(); ++it)
+			{
+				if (it->second)
+				{
+					it->second->Respond(param, this);
+				}
+			}
 		}
 
 		return ReturnT();
@@ -109,27 +121,27 @@ public:
 	template <typename ReturnT, typename ParamT>
 	class Iterator
 	{
-		ObserverImpl<ReturnT, ParamT> & _tbl;
+		ObserverImpl<ReturnT, ParamT>& _tbl;
 		DWORD index;
 		ReceiverImplBase<ReturnT, ParamT>* ptr;
 	public:
-		Iterator( ObserverImpl & table )
-			: _tbl( table ), index(0), ptr(NULL)
+		Iterator(ObserverImpl& table)
+			: _tbl(table), index(0), ptr(NULL)
 		{}
 
-		Iterator( const Iterator & v )
-			: _tbl( v._tbl ), index(v.index), ptr(v.ptr)
+		Iterator(const Iterator& v)
+			: _tbl(v._tbl), index(v.index), ptr(v.ptr)
 		{}
 
 		ReceiverImplBase<ReturnT, ParamT>* next()
 		{
-			if ( index >= _tbl.receivers_.size() )
+			if (index >= _tbl.receivers_.size())
 				return NULL;
 
-			for ( ; index < _tbl.receivers_.size(); )
+			for (; index < _tbl.receivers_.size(); )
 			{
-				ptr = _tbl.receivers_[ index++ ];
-				if ( ptr )
+				ptr = _tbl.receivers_[index++];
+				if (ptr)
 					return ptr;
 			}
 			return NULL;
@@ -150,7 +162,7 @@ public:
 		: count_(0)
 	{}
 
-	virtual ~ReceiverImpl()	{}
+	virtual ~ReceiverImpl() {}
 
 	virtual void AddObserver(ObserverImplBase<ReturnT, ParamT>* observer)
 	{

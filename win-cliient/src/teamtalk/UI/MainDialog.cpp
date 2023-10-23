@@ -191,7 +191,11 @@ void MainDialog::CreateTrayIcon()
 #ifdef _DEBUG
 	sText += _T("(Debug)");
 #endif
-
+	module::UserInfoEntity myInfo;
+	module::getUserListModule()->getMyInfo(myInfo);
+	CString realName;
+	realName.Format(_T("(%s)"), myInfo.getRealName());
+	sText += realName;
 	InstallIcon(sText, m_hIcons[ICON_TRAY_LOGO], IDR_MAINFRAME, FALSE);
 }
 

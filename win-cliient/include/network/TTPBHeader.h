@@ -46,8 +46,8 @@ public:
     //@}
 
 public:
-	byte* getSerializeBuffer();
-	void unSerialize(byte* headerBuff, UInt16 len);
+	byte_t* getSerializeBuffer();
+	void unSerialize(byte_t* headerBuff, UInt16 len);
 	void clear();
 	inline void setLength(UInt32 length) { m_length = length; }
 	inline void setModuleId(UInt16 moduleId) { m_moduleId = moduleId; }
@@ -72,7 +72,7 @@ private:
 	UInt16		m_seqNumber = 0;	// °üÐòºÅ
 	UInt16		m_reserved = 0; // ±£Áô
 
-	byte*		m_pHeaderBuff = 0;
+	byte_t*		m_pHeaderBuff = 0;
 };
 
 NAMESPACE_END(imcore)

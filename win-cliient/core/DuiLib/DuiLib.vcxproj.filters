@@ -45,9 +45,6 @@
     <ClCompile Include="UIlib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utils\WinImplBase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Utils\stb_image.c">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
@@ -162,6 +159,9 @@
     <ClCompile Include="Utils\UIShadow.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
+    <ClCompile Include="Utils\WinImplBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StdAfx.h">
@@ -183,9 +183,6 @@
       <Filter>Header Files\Utils</Filter>
     </ClInclude>
     <ClInclude Include="Utils\WebBrowserEventHandler.h">
-      <Filter>Header Files\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="Utils\WinImplBase.h">
       <Filter>Header Files\Utils</Filter>
     </ClInclude>
     <ClInclude Include="Core\UIBase.h">
@@ -295,6 +292,9 @@
     </ClInclude>
     <ClInclude Include="Utils\UIShadow.h">
       <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\WinImplBase.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

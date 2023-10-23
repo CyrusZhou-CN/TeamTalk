@@ -158,7 +158,7 @@ void CImConn::OnRead()
 			try
 			{
 				imcore::TTPBHeader pbHeader;
-				pbHeader.unSerialize((byte*)m_in_buf.GetBuffer(), imcore::HEADER_LENGTH);
+				pbHeader.unSerialize((byte_t*)m_in_buf.GetBuffer(), imcore::HEADER_LENGTH);
 				LOG__(NET, _T("OnRead moduleId:0x%x,commandId:0x%x"), pbHeader.getModuleId(), pbHeader.getCommandId());
 				if (m_pTcpSocketCB)
 					m_pTcpSocketCB->onReceiveData((const char*)m_in_buf.GetBuffer(), length);

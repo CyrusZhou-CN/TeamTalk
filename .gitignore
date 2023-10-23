@@ -8,7 +8,7 @@
 /win-cliient/lib
 /win-cliient/obj
 /win-cliient/3rdParty/src/libsecurity/lib/win
-/win-cliient/solution/libsecurity/obj
+/win-cliient/solution/libsecurity
 /win-cliient/bin/teamtalk/Release
 /win-cliient/bin/teamtalk/Debug
 /win-cliient\bin\teamtalk\Release
